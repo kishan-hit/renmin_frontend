@@ -5,9 +5,9 @@ import emailIcon from '../assets/images/icons/mail-line.svg';
 
 const Location = () => {
     return (
-        <div className='section px-3 md:px-16 lg:px-40 py-4 md:py-8 lg:py-12 mt-16 md:mt-20 lg:mt-24 overflow-hidden'>
+        <div className='section px-3 md:px-16 lg:px-40 py-12 mt-16 md:mt-20 lg:mt-24 overflow-hidden'>
             <h2 className="text-center text-blue-900 text-4xl font-bold">Contact Us</h2>
-            <div className='flex flex-col md:flex-row w-full justify-center mt-2 md:mt-8 gap-4'>
+            <div className='flex flex-col sm:flex-row w-full justify-center mt-2 md:mt-8 gap-4'>
                 <div className='w-full md:w-[50%] aspect-square flex flex-col justify-center items-center box-border md:justify-start md:items-start'>
                     <div className='text-center md:text-left'>
                         <div className='font-semibold text-lg text-[#990011FF] mb-2'>Renmin Education</div>

@@ -39,12 +39,38 @@ export default function WhyChooseUs() {
         }
     ];
 
+    function NextArrow(props) {
+        const { onClick } = props;
+        return (
+            <button
+                className="absolute top-1/2 right-[-10px] md:right-[-30px] transform -translate-y-1/2 bg-blue-900 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition-all z-10"
+                onClick={onClick}
+            >
+                ❯
+            </button>
+        );
+    }
+
+    function PrevArrow(props) {
+        const { onClick } = props;
+        return (
+            <button
+                className="absolute top-1/2 left-[-10px] md:left-[-30px] transform -translate-y-1/2 bg-blue-900 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition-all z-10"
+                onClick={onClick}
+            >
+                ❮
+            </button>
+        );
+    }
+
     const settings = {
         dots: false,
         infinite: true,
         speed: 500,
         slidesToShow: 3,
         slidesToScroll: 1,
+        nextArrow: <NextArrow />,
+        prevArrow: <PrevArrow />,
         responsive: [
             {
                 breakpoint: 1024,
@@ -52,22 +78,22 @@ export default function WhyChooseUs() {
                     slidesToShow: 2,
                     slidesToScroll: 1,
                     infinite: true,
-                    dots: true
-                }
+                    dots: true,
+                },
             },
             {
                 breakpoint: 600,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
-        ]
+                    slidesToScroll: 1,
+                },
+            },
+        ],
     };
 
     return (
         <section className="bg-gray-100">
-            <div className='px-3 md:px-16 lg:px-40 py-4 md:py-8 lg:py-10 bg-gray-200'>
+            <div className="px-3 md:px-16 lg:px-40 py-4 md:py-8 lg:py-10 bg-gray-100">
                 <h2 className="text-center text-blue-900 text-4xl font-bold">Why Choose Us?</h2>
 
                 <Slider {...settings}>
@@ -75,8 +101,10 @@ export default function WhyChooseUs() {
                         <div key={index} className="p-4 h-60 md:h-[17rem] mb-4">
                             <div className="bg-white p-6 rounded-lg shadow-lg h-full flex flex-col justify-between transition-transform transform hover:scale-110 hover:shadow-xl duration-700">
                                 <div>
-                                    <div className='text-2xl font-bold text-[#bf1d1d] mb-1'>{item.title}</div>
-                                    <div className='text-gray-700 h-32 overflow-y-auto text-justify'>{item.description}</div>
+                                    <div className="text-2xl font-bold text-[#bf1d1d] mb-1">{item.title}</div>
+                                    <div className="text-gray-700 h-32 overflow-y-auto text-justify scrollbar-hide">
+                                        {item.description}
+                                    </div>
                                 </div>
                             </div>
                         </div>

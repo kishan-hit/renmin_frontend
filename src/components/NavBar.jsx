@@ -80,9 +80,9 @@ const NavBar = () => {
             {
                 isMobileMenuOpen && (
                     <div className="lg:hidden bg-[#bf1d1d] text-white flex flex-col items-start py-6 px-6 space-y-4">
-                        <div className="cursor-pointer">Home</div>
-                        <div className="cursor-pointer">About Us</div>
-                        <div className="cursor-pointer">Our Services</div>
+                        <div className="cursor-pointer" onClick={() => navigate('/')}>Home</div>
+                        <div className="cursor-pointer" onClick={() => navigate('/about')}>About Us</div>
+                        <div className="cursor-pointer" onClick={() => navigate('/services')}>Our Services</div>
 
                         <div className="cursor-pointer flex justify-between items-center w-full" onClick={() => setMobileCountriesOpen(!isMobileCountriesOpen)}>
                             <span>Countries</span>
@@ -92,7 +92,9 @@ const NavBar = () => {
                             <div className="flex flex-col pl-4 space-y-2 w-full">
                                 <div className="cursor-pointer hover:bg-blue-200 py-1">China</div>
                                 <div className="cursor-pointer hover:bg-blue-200 py-1">Russia</div>
-                                <div className="cursor-pointer hover:bg-blue-200 py-1">Kyrgyzstan</div>
+                                <div className="cursor-pointer hover:bg-blue-200 py-1">Krygyzstan</div>
+                                <div className="cursor-pointer hover:bg-blue-200 py-1">Bangladesh</div>
+                                <div className="cursor-pointer hover:bg-blue-200 py-1">Uzbekistan</div>
                             </div>
                         )}
 
@@ -112,7 +114,7 @@ const NavBar = () => {
 
                         <div className="cursor-pointer">Scholarship</div>
                         <div className="cursor-pointer">Gallery</div>
-                        <div className="cursor-pointer">Contact Us</div>
+                        <div className="cursor-pointer" onClick={() => navigate('/contact-us')}>Contact Us</div>
                     </div>
                 )
             }

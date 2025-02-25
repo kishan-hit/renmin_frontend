@@ -49,11 +49,11 @@ const Testimonials = () => {
   const { name, university, image, review } = testimonials[currentIndex];
 
   return (
-    <section className="bg-gray-100 py-16 px-6 text-center relative">
+    <section className="bg-gray-100 py-16 px-6 text-center relative overflow-hidden">
       <h2 className="text-3xl font-bold text-blue-900">What Our Students Say</h2>
       <div className="w-16 h-1 bg-blue-900 mx-auto my-4"></div>
 
-      <div className="max-w-3xl mx-auto mt-8 bg-white p-6 rounded-lg shadow-lg relative">
+      <div className="relative max-w-3xl mx-auto mt-8 bg-white p-6 rounded-lg shadow-lg">
         <img
           src={image}
           alt={name}
@@ -69,14 +69,15 @@ const Testimonials = () => {
           <span className="text-4xl text-blue-900 absolute right-0 -bottom-2">❞</span>
         </p>
 
+        {/* Navigation Buttons */}
         <button
-          className="absolute left-[-50px] top-1/2 transform -translate-y-1/2 bg-blue-900 text-white p-3 rounded-full shadow-md hover:bg-blue-700 transition-all"
+          className="absolute left-2 md:left-[-40px] top-1/2 transform -translate-y-1/2 bg-blue-900 text-white p-3 rounded-full shadow-md hover:bg-blue-700 transition-all"
           onClick={prevTestimonial}
         >
           <FaChevronLeft className="w-5 h-5" />
         </button>
         <button
-          className="absolute right-[-50px] top-1/2 transform -translate-y-1/2 bg-blue-900 text-white p-3 rounded-full shadow-md hover:bg-blue-700 transition-all"
+          className="absolute right-2 md:right-[-40px] top-1/2 transform -translate-y-1/2 bg-blue-900 text-white p-3 rounded-full shadow-md hover:bg-blue-700 transition-all"
           onClick={nextTestimonial}
         >
           <FaChevronRight className="w-5 h-5" />
