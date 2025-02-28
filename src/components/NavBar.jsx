@@ -68,7 +68,7 @@ const NavBar = () => {
                     </div>
 
                     <div className="hover:text-gray-300 cursor-pointer">Scholarship</div>
-                    <div className="hover:text-gray-300 cursor-pointer">Gallery</div>
+                    <div className="hover:text-gray-300 cursor-pointer" onClick={() => navigate('/gallery')}>Gallery</div>
                     <div className="hover:text-gray-300 cursor-pointer" onClick={() => navigate('/contact-us')}>Contact Us</div>
                 </div>
 
@@ -113,7 +113,7 @@ const NavBar = () => {
                         )}
 
                         <div className="cursor-pointer">Scholarship</div>
-                        <div className="cursor-pointer">Gallery</div>
+                        <div className="cursor-pointer" onClick={() => navigate('/gallery')}>Gallery</div>
                         <div className="cursor-pointer" onClick={() => navigate('/contact-us')}>Contact Us</div>
                     </div>
                 )
