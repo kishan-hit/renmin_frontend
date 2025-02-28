@@ -35,21 +35,29 @@ const CustomModal = ({ open, handleClose }) => {
           background: "white",
           padding: "24px",
           borderRadius: "16px",
+          maxWidth: "90vw", // Responsive width
           width: "400px",
-          margin: "100px auto",
           boxShadow: 3,
-          position: "relative",
+          position: "absolute",
+          top: "50%",
+          left: "50%",
+          transform: "translate(-50%, -50%)", // Centering modal
+          display: "flex",
+          flexDirection: "column",
         }}
       >
+        {/* Close Button */}
         <IconButton
           sx={{ position: "absolute", top: 8, right: 8 }}
           onClick={handleClose}
         >
           <CloseIcon />
         </IconButton>
+
         <Typography variant="h6" align="center" fontWeight="bold" mb={2}>
           Apply for MBBS in Abroad
         </Typography>
+
         <TextField
           label="Name"
           name="name"
@@ -126,6 +134,7 @@ const CustomModal = ({ open, handleClose }) => {
             backgroundColor: "#1e3a8a",
             color: "white",
             mt: 2,
+            "&:hover": { backgroundColor: "#172554" }, // Darker on hover
           }}
         >
           SUBMIT NOW
