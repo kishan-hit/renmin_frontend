@@ -34,7 +34,6 @@ const NavBar = () => {
             className="hover:text-gray-300 cursor-pointer"
             onClick={() => navigate("/")}
           >
-            {" "}
             Home
           </div>
           <div
@@ -47,7 +46,6 @@ const NavBar = () => {
             className="hover:text-gray-300 cursor-pointer"
             onClick={() => navigate("/services")}
           >
-            {" "}
             Our Services
           </div>
           <div
@@ -56,66 +54,72 @@ const NavBar = () => {
           >
             Scholarship
           </div>
-          <div
-            className="relative flex items-center space-x-1 cursor-pointer"
-            onMouseEnter={() => setCountriesOpen(true)}
-            onMouseLeave={() => setCountriesOpen(false)}
-          >
-            <div className="flex items-center hover:text-gray-300 py-4">
-              Countries <FaChevronDown className="ml-1 text-sm" />
+          <div className="relative">
+            <div
+              className="hover:text-gray-300 cursor-pointer flex items-center"
+              onClick={() => setCountriesOpen(!isCountriesOpen)}
+            >
+              Countries <FaChevronDown className="ml-1" />
             </div>
             {isCountriesOpen && (
-              <div className="absolute left-0 top-full w-40 bg-white shadow-md rounded-md flex flex-col text-gray-700 font-normal z-10">
-                <div className="px-4 py-2 cursor-pointer hover:bg-blue-200">
-                  China
+              <div className="absolute left-0 bg-white text-black shadow-md mt-2 py-2 w-48">
+                <div
+                  className="px-4 py-2 cursor-pointer hover:bg-gray-200"
+                  onClick={() => navigate("/countries/usa")}
+                >
+                  USA
                 </div>
-                <div className="px-4 py-2 cursor-pointer hover:bg-blue-200">
-                  Russia
+                <div
+                  className="px-4 py-2 cursor-pointer hover:bg-gray-200"
+                  onClick={() => navigate("/countries/canada")}
+                >
+                  Canada
                 </div>
-                <div className="px-4 py-2 cursor-pointer hover:bg-blue-200">
-                  Krygyzstan
-                </div>
-                <div className="px-4 py-2 cursor-pointer hover:bg-blue-200">
-                  Bangladesh
-                </div>
-                <div className="px-4 py-2 cursor-pointer hover:bg-blue-200">
-                  Uzbekistan
+                <div
+                  className="px-4 py-2 cursor-pointer hover:bg-gray-200"
+                  onClick={() => navigate("/countries/uk")}
+                >
+                  UK
                 </div>
               </div>
             )}
           </div>
-
-          <div
-            className="relative flex items-center space-x-1 cursor-pointer"
-            onMouseEnter={() => setCoursesOpen(true)}
-            onMouseLeave={() => setCoursesOpen(false)}
-          >
-            <div className="flex items-center hover:text-gray-300 py-4">
-              Courses <FaChevronDown className="ml-1 text-sm" />
+          <div className="relative">
+            <div
+              className="hover:text-gray-300 cursor-pointer flex items-center"
+              onClick={() => setCoursesOpen(!isCoursesOpen)}
+            >
+              Courses <FaChevronDown className="ml-1" />
             </div>
             {isCoursesOpen && (
-              <div className="absolute left-0 top-full w-48 bg-white shadow-md rounded-md flex flex-col text-gray-700 font-normal z-10">
-                <div className="px-4 py-2 cursor-pointer hover:bg-blue-200">
-                  Chinese Language
+              <div className="absolute left-0 bg-white text-black shadow-md mt-2 py-2 w-48">
+                <div
+                  className="px-4 py-2 cursor-pointer hover:bg-gray-200"
+                  onClick={() => navigate("/courses/engineering")}
+                >
+                  Engineering
                 </div>
-                <div className="px-4 py-2 cursor-pointer hover:bg-blue-200">
-                  Masters
+                <div
+                  className="px-4 py-2 cursor-pointer hover:bg-gray-200"
+                  onClick={() => navigate("/courses/medicine")}
+                >
+                  Medicine
                 </div>
-                <div className="px-4 py-2 cursor-pointer hover:bg-blue-200">
-                  Bachelors
-                </div>
-                <div className="px-4 py-2 cursor-pointer hover:bg-blue-200">
-                  PhD
-                </div>
-                <div className="px-4 py-2 cursor-pointer hover:bg-blue-200">
-                  MBBS
+                <div
+                  className="px-4 py-2 cursor-pointer hover:bg-gray-200"
+                  onClick={() => navigate("/courses/business")}
+                >
+                  Business
                 </div>
               </div>
             )}
           </div>
-
-          <div className="hover:text-gray-300 cursor-pointer">Scholarship</div>
-          <div className="hover:text-gray-300 cursor-pointer">Gallery</div>
+          <div
+            className="hover:text-gray-300 cursor-pointer"
+            onClick={() => navigate("/gallery")}
+          >
+            Gallery
+          </div>
           <div
             className="hover:text-gray-300 cursor-pointer"
             onClick={() => navigate("/contact-us")}
@@ -143,55 +147,71 @@ const NavBar = () => {
           <div className="cursor-pointer" onClick={() => navigate("/services")}>
             Our Services
           </div>
-
           <div
-            className="cursor-pointer flex justify-between items-center w-full"
+            className="cursor-pointer"
+            onClick={() => navigate("/scholarship")}
+          >
+            Scholarship
+          </div>
+          <div
+            className="cursor-pointer flex items-center"
             onClick={() => setMobileCountriesOpen(!isMobileCountriesOpen)}
           >
-            <span>Countries</span>
-            {isMobileCountriesOpen ? <FaMinus /> : <FaPlus />}
+            Countries <FaChevronDown className="ml-1" />
           </div>
           {isMobileCountriesOpen && (
-            <div className="flex flex-col pl-4 space-y-2 w-full">
-              <div className="cursor-pointer hover:bg-blue-200 py-1">China</div>
-              <div className="cursor-pointer hover:bg-blue-200 py-1">
-                Russia
+            <div className="pl-4">
+              <div
+                className="cursor-pointer"
+                onClick={() => navigate("/countries/usa")}
+              >
+                USA
               </div>
-              <div className="cursor-pointer hover:bg-blue-200 py-1">
-                Krygyzstan
+              <div
+                className="cursor-pointer"
+                onClick={() => navigate("/countries/canada")}
+              >
+                Canada
               </div>
-              <div className="cursor-pointer hover:bg-blue-200 py-1">
-                Bangladesh
-              </div>
-              <div className="cursor-pointer hover:bg-blue-200 py-1">
-                Uzbekistan
+              <div
+                className="cursor-pointer"
+                onClick={() => navigate("/countries/uk")}
+              >
+                UK
               </div>
             </div>
           )}
-
           <div
-            className="cursor-pointer flex justify-between items-center w-full"
+            className="cursor-pointer flex items-center"
             onClick={() => setMobileCoursesOpen(!isMobileCoursesOpen)}
           >
-            <span>Courses</span>
-            {isMobileCoursesOpen ? <FaMinus /> : <FaPlus />}
+            Courses <FaChevronDown className="ml-1" />
           </div>
           {isMobileCoursesOpen && (
-            <div className="flex flex-col pl-4 space-y-2 w-full">
-              <div className="cursor-pointer hover:bg-blue-200 py-1">
-                Chinese Language
+            <div className="pl-4">
+              <div
+                className="cursor-pointer"
+                onClick={() => navigate("/courses/engineering")}
+              >
+                Engineering
               </div>
-              <div className="cursor-pointer hover:bg-blue-200 py-1">
-                Masters
+              <div
+                className="cursor-pointer"
+                onClick={() => navigate("/courses/medicine")}
+              >
+                Medicine
               </div>
-              <div className="cursor-pointer hover:bg-blue-200 py-1">
-                Bachelors
+              <div
+                className="cursor-pointer"
+                onClick={() => navigate("/courses/business")}
+              >
+                Business
               </div>
-              <div className="cursor-pointer hover:bg-blue-200 py-1">PhD</div>
-              <div className="cursor-pointer hover:bg-blue-200 py-1">MBBS</div>
             </div>
           )}
-          <div className="cursor-pointer">Gallery</div>
+          <div className="cursor-pointer" onClick={() => navigate("/gallery")}>
+            Gallery
+          </div>
           <div
             className="cursor-pointer"
             onClick={() => navigate("/contact-us")}
