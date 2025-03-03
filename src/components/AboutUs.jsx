@@ -25,7 +25,7 @@ const AboutUs = () => {
   };
 
   return (
-    <div className="flex flex-col lg:flex-row items-center bg-gray-100 px-4 md:px-10 lg:px-32 gap-8 py-16 mt-16 md:mt-20 lg:mt-24">
+    <div className="flex flex-col lg:flex-row items-center bg-gray-100 px-4 md:px-10 lg:px-32 gap-8 py-16 mt-16 md:mt-20">
       <Slide direction="left" duration={1000} triggerOnce className="w-full lg:w-[60%]">
         <div className="px-2 md:px-4 lg:px-12">
           <h2 className="text-4xl font-bold text-blue-900">About Renmin Education</h2>

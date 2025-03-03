@@ -5,7 +5,7 @@ import expertImage from '../assets/images/expertGuidance.jpeg';
 const AboutContent = () => {
     return (
         <section className="bg-gray-100 py-12">
-            <div className="max-w-6xl mx-auto px-6 mt-16 md:mt-20 lg:mt-24">
+            <div className="max-w-6xl mx-auto px-6 mt-16 md:mt-20">
                 <h1 className="text-4xl font-bold text-blue-900 text-center">About Us</h1>
                 <p className="text-center mt-1 text-2xl text-gray-700 mb-6">
                     Renmin Education: Shaping Your Academic Future with Global Opportunities
