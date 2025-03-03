@@ -102,7 +102,7 @@ export default function WhyChooseUs() {
                             <div className="bg-white p-6 rounded-lg shadow-lg h-full flex flex-col justify-between transition-transform transform hover:scale-110 hover:shadow-xl duration-700">
                                 <div>
                                     <div className="text-2xl font-bold text-[#bf1d1d] mb-1">{item.title}</div>
-                                    <div className="text-gray-700 h-32 overflow-y-auto text-justify scrollbar-hide">
+                                    <div className="text-gray-700 h-32 overflow-y-auto text-justify scrollbar-thin scrollbar-none">
                                         {item.description}
                                     </div>
                                 </div>
