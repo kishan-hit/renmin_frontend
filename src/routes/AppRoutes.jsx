@@ -6,6 +6,7 @@ import AboutPage from "../pages/AboutPage";
 import ServicePage from "../pages/ServicePage";
 import Gallery from "../pages/Gallery";
 import Scholarship from "../components/Scholarship";
+import ChineseLanguage from "../pages/Courses/Chinese";
 
 const AppRoutes = () => {
   return (
@@ -18,6 +19,7 @@ const AppRoutes = () => {
         <Route path="/contact-us" element={<ContactPage />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/scholarship" element={<Scholarship />} />
+        <Route path="/courses/chinese" element={<ChineseLanguage />} />
         {/* will be replaced in future with home page or 404 page */}
         {/* <Route path="*" element={<NotFound />} />  */}
       </Routes>
