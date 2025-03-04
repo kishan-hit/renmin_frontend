@@ -23,7 +23,6 @@ const Home = () => {
         handleClose={() => setIsModalOpen(false)}
       />
 
-      {/* Content stays in the background */}
       <div className={isModalOpen ? "blur-md pointer-events-none" : ""}>
         <NavBar />
         <AboutUs />
