@@ -1,10 +1,51 @@
 import React from "react";
 import { motion } from "framer-motion";
+import BLCU from '../assets/images/universities/BLCU.jpeg';
+import FU from '../assets/images/universities/Fudan_University.jpeg';
+import SJTU from '../assets/images/universities/SJTU.jpeg';
+import TSU from '../assets/images/universities/Tsinghua_University.jpeg';
+import { FaMapMarkerAlt } from "react-icons/fa";
 
 const fadeInVariants = {
   hidden: { opacity: 0, y: 30 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
 };
+
+const cardVariants = {
+  hidden: { opacity: 0, scale: 0.8 },
+  visible: { opacity: 1, scale: 1, transition: { duration: 0.8, ease: "easeOut" } },
+};
+
+const universities = [
+  {
+    id: 1,
+    name: "Beijing Language and Culture University",
+    location: "Beijing",
+    specialization: "Specializing in Chinese language education for international students, BLCU is one of the most popular destinations for learning Mandarin.",
+    image: BLCU,
+  },
+  {
+    id: 2,
+    name: "Tsinghua University",
+    location: "Beijing",
+    specialization: "Offering high-quality language programs and being one of the top universities in China with global recognition.",
+    image: SJTU,
+  },
+  {
+    id: 3,
+    name: "Fudan University",
+    location: "Shanghai",
+    specialization: "Providing an excellent Chinese language program integrated with cultural immersion opportunities.",
+    image: FU,
+  },
+  {
+    id: 4,
+    name: "Shanghai Jiao Tong University",
+    location: "Shanghai",
+    specialization: "Offering both short-term and long-term Chinese language programs with a focus on practical language use in business and society.",
+    image: TSU,
+  },
+];
 
 const ChineseLanguage = () => {
   return (
@@ -299,7 +340,7 @@ const ChineseLanguage = () => {
       </motion.ol>
 
       <motion.h4
-        className="text-gray-900 text-xl mx-auto md:mt-2 lg:mt-4 mb-2 font-bold"
+        className="text-gray-900 text-xl mx-auto md:mt-2 lg:mt-4 mb-8 font-bold"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
@@ -307,6 +348,52 @@ const ChineseLanguage = () => {
       >
         Top Universities in China for Learning Chinese -
       </motion.h4>
+
+      <motion.div
+        className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8 px-6 md:px-16 lg:px-32"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+      >
+        {universities.map((uni) => (
+          <motion.div
+            key={uni.id}
+            className="bg-white rounded-xl shadow-lg border border-gray-200 overflow-hidden"
+            variants={cardVariants}
+          >
+            <motion.img
+              src={uni.image}
+              alt={uni.name}
+              className="w-full h-[14rem] object-cover"
+              variants={fadeInVariants}
+            />
+
+            <div className="p-4 flex flex-col items-center text-center space-y-2">
+              <motion.h3
+                variants={fadeInVariants}
+                className="text-lg font-semibold text-gray-900 leading-tight"
+              >
+                {uni.name}
+              </motion.h3>
+
+              <motion.div
+                variants={fadeInVariants}
+                className="text-base font-medium flex items-center gap-2 text-gray-900"
+              >
+                <FaMapMarkerAlt className="text-blue-900 text-lg" />
+                <span>{uni.location}</span>
+              </motion.div>
+
+              <motion.p
+                variants={fadeInVariants}
+                className="text-sm text-gray-700 px-4"
+              >
+                {uni.specialization}
+              </motion.p>
+            </div>
+          </motion.div>
+        ))}
+      </motion.div>
 
       <motion.h4
         className="text-gray-900 text-xl mx-auto md:mt-2 lg:mt-4 mb-2 font-bold"
@@ -337,15 +424,19 @@ const ChineseLanguage = () => {
       >
         <motion.li variants={fadeInVariants}>
           <span className="font-bold text-blue-900">Tuition Fees:</span>
+          <span className="text-gray-700"> $1,500 to $3,500 per year (depending on the program and university)</span>
         </motion.li>
         <motion.li variants={fadeInVariants}>
           <span className="font-bold text-blue-900">Accommodation:</span>
+          <span className="text-gray-700"> $800 to $2,000 per year (depending on whether students stay in university dormitories or private accommodation)</span>
         </motion.li>
         <motion.li variants={fadeInVariants}>
           <span className="font-bold text-blue-900">Living Expenses:</span>
+          <span className="text-gray-700"> $300 to $600 per month</span>
         </motion.li>
         <motion.li variants={fadeInVariants}>
           <span className="font-bold text-blue-900">Total Cost for 1 Year:</span>
+          <span className="text-gray-700"> $2,600 to $6,100 (including tuition, accommodation, and living expenses)</span>
         </motion.li>
       </motion.ol>
 
