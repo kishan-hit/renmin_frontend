@@ -350,7 +350,7 @@ const ChineseLanguage = () => {
       </motion.h4>
 
       <motion.div
-        className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8 px-6 md:px-16 lg:px-32"
+        className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8 px-6 md:px-16 lg:px-32 mb-8"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}
