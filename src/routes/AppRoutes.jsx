@@ -5,6 +5,9 @@ import Home from "../components/Home";
 import AboutPage from "../pages/AboutPage";
 import ServicePage from "../pages/ServicePage";
 import Gallery from "../pages/Gallery";
+import Scholarship from "../pages/Scholarship";
+import CoursePage from "../pages/CoursePage";
+import CountryPage from "../pages/CountryPage";
 import Scholarship from "../components/Scholarship";
 import ChineseLanguage from "../pages/Courses/Chinese";
 import MastersPage from "../pages/Courses/MastersPage";
@@ -20,6 +23,7 @@ const AppRoutes = () => {
         <Route path="/contact-us" element={<ContactPage />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/scholarship" element={<Scholarship />} />
+        <Route path="/countries/:countryName" element={<CountryPage />} />
         <Route path="/courses/chinese" element={<ChineseLanguage />} />
         <Route path="/courses/masters" element={<MastersPage />} />
         {/* will be replaced in future with home page or 404 page */}

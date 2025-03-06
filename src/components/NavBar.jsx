@@ -76,7 +76,7 @@ const NavBar = () => {
                 >
                   China
                 </div>
-                <div
+                {/* <div
                   className="px-4 py-2 cursor-pointer hover:bg-blue-200"
                   onClick={() => navigate("/countries/russia")}
                 >
@@ -99,7 +99,7 @@ const NavBar = () => {
                   onClick={() => navigate("/countries/uzbekistan")}
                 >
                   Uzbekistan
-                </div>
+                </div> */}
               </div>
             )}
           </div>
@@ -116,31 +116,31 @@ const NavBar = () => {
               <div className="absolute left-0 top-full w-48 bg-white shadow-md rounded-md flex flex-col text-gray-700 font-normal z-10">
                 <div
                   className="px-4 py-2 cursor-pointer hover:bg-blue-200"
-                  onClick={() => navigate('/courses/chinese')}
+                  onClick={() => navigate("/courses/chinese")}
                 >
                   Chinese Language
                 </div>
                 <div
                   className="px-4 py-2 cursor-pointer hover:bg-blue-200"
-                  onClick={() => navigate('/courses/masters')}
+                  onClick={() => navigate("/courses/masters")}
                 >
                   Masters
                 </div>
                 <div
                   className="px-4 py-2 cursor-pointer hover:bg-blue-200"
-                  onClick={() => navigate('/courses/bachelors')}
+                  onClick={() => navigate("/courses/bachelors")}
                 >
                   Bachelors
                 </div>
                 <div
                   className="px-4 py-2 cursor-pointer hover:bg-blue-200"
-                  onClick={() => navigate('/courses/phd')}
+                  onClick={() => navigate("/courses/phd")}
                 >
                   PhD
                 </div>
                 <div
                   className="px-4 py-2 cursor-pointer hover:bg-blue-200"
-                  onClick={() => navigate('/courses/mbbs')}
+                  onClick={() => navigate("/courses/mbbs")}
                 >
                   MBBS
                 </div>
@@ -166,7 +166,10 @@ const NavBar = () => {
             Contact Us
           </div>
         </div>
-        <div className="lg:hidden text-white text-2xl cursor-pointer" onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}>
+        <div
+          className="lg:hidden text-white text-2xl cursor-pointer"
+          onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}
+        >
           {isMobileMenuOpen ? <FaTimes /> : <FaBars />}
         </div>
       </div>
@@ -182,7 +185,10 @@ const NavBar = () => {
           <div className="cursor-pointer" onClick={() => navigate("/services")}>
             Our Services
           </div>
-          <div className="cursor-pointer flex justify-between items-center w-full" onClick={() => setMobileCountriesOpen(!isMobileCountriesOpen)}>
+          <div
+            className="cursor-pointer flex justify-between items-center w-full"
+            onClick={() => setMobileCountriesOpen(!isMobileCountriesOpen)}
+          >
             <span>Countries</span>
             {isMobileCountriesOpen ? <FaMinus /> : <FaPlus />}
           </div>
@@ -220,7 +226,10 @@ const NavBar = () => {
               </div>
             </div>
           )}
-          <div className="cursor-pointer flex justify-between items-center w-full" onClick={() => setMobileCoursesOpen(!isMobileCoursesOpen)}>
+          <div
+            className="cursor-pointer flex justify-between items-center w-full"
+            onClick={() => setMobileCoursesOpen(!isMobileCoursesOpen)}
+          >
             <span>Courses</span>
             {isMobileCoursesOpen ? <FaMinus /> : <FaPlus />}
           </div>
@@ -228,31 +237,31 @@ const NavBar = () => {
             <div className="flex flex-col pl-4 space-y-2 w-full">
               <div
                 className="cursor-pointer hover:bg-blue-200 py-1"
-                onClick={() => navigate('/courses/chinese')}
+                onClick={() => navigate("/courses/chinese")}
               >
                 Chinese Language
               </div>
               <div
                 className="cursor-pointer hover:bg-blue-200 py-1"
-                onClick={() => navigate('/courses/masters')}
+                onClick={() => navigate("/courses/masters")}
               >
                 Masters
               </div>
               <div
                 className="cursor-pointer hover:bg-blue-200 py-1"
-                onClick={() => navigate('/courses/bachelors')}
+                onClick={() => navigate("/courses/bachelors")}
               >
                 Bachelors
               </div>
               <div
                 className="cursor-pointer hover:bg-blue-200 py-1"
-                onClick={() => navigate('/courses/phd')}
+                onClick={() => navigate("/courses/phd")}
               >
                 PhD
               </div>
               <div
                 className="cursor-pointer hover:bg-blue-200 py-1"
-                onClick={() => navigate('/courses/mbbs')}
+                onClick={() => navigate("/courses/mbbs")}
               >
                 MBBS
               </div>
