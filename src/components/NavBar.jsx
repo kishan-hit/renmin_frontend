@@ -33,7 +33,7 @@ const NavBar = () => {
 
           <div className="ml-12 relative">
             <div className="bg-white px-8 py-1 skew-x-[-20deg] shadow-md border border-gray-300">
-              <span className="text-blue-900 text-4xl font-dancing italic tracking-wide skew-x-[20deg]">
+              <span className="text-blue-900 text-2xl lg:4xl font-dancing italic tracking-wide skew-x-[20deg]">
                 Renmin Education
               </span>
             </div>

@@ -61,16 +61,16 @@ const Services = () => {
         <section className="py-16 bg-gray-100">
             <Fade direction='up' delay={1} triggerOnce>
                 <h2 className="text-center text-[#bf1d1d] text-4xl font-bold">Services We Offer</h2>
-                <p className="text-center mt-1 text-2xl text-gray-700 mb-6">
+                <p className="text-center mt-1 text-2xl text-gray-700 mb-6 px-2">
                     Our Comprehensive Services: Tailored to Your Needs
                 </p>
-                <p className="text-gray-700 text-center max-w-6xl mx-auto mb-12">
+                <p className="text-gray-700 text-center max-w-6xl mx-auto mb-12 px-2">
                     At Renmin Education, we offer a range of services designed to make your journey
                     to studying abroad as smooth and successful as possible. Our end-to-end services
                     cover every aspect of your study abroad experience, including:
                 </p>
             </Fade>
-            <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-3">
                 {services.map((service, index) => (
                     <motion.div
                         key={index}

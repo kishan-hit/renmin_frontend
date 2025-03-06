@@ -23,7 +23,7 @@ const Stats = () => {
             { threshold: 0.5 }
         );
 
-        const currentRef = sectionRef.current; // Store ref value in a variable
+        const currentRef = sectionRef.current;
 
         if (currentRef) {
             observer.observe(currentRef);
@@ -39,18 +39,17 @@ const Stats = () => {
     return (
         <section
             ref={sectionRef}
-            className="relative bg-[#000000] text-white py-12 px-6"
+            className="relative w-full overflow-x-hidden bg-[#000000] text-white py-12 px-6 box-border"
             style={{ backgroundImage: `url(${background})`, backgroundSize: "cover", backgroundPosition: "top" }}
         >
             <div className="absolute inset-0 bg-[#000000] opacity-80"></div>
 
             <motion.div
-                className="relative max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-center"
+                className="relative w-full max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-center"
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.5 }}
             >
-                {/** Happy Clients */}
                 <motion.div className="flex flex-col items-center" variants={fadeRightVariants}>
                     <FaUsers className="text-5xl mb-2" />
                     <h2 className="text-4xl font-bold">
@@ -59,7 +58,6 @@ const Stats = () => {
                     <p className="text-lg">Happy Clients</p>
                 </motion.div>
 
-                {/** Completed Works */}
                 <motion.div className="flex flex-col items-center" variants={fadeRightVariants}>
                     <FaCheckCircle className="text-5xl mb-2" />
                     <h2 className="text-4xl font-bold">
@@ -68,7 +66,6 @@ const Stats = () => {
                     <p className="text-lg">Completed Works</p>
                 </motion.div>
 
-                {/** Winning Rewards */}
                 <motion.div className="flex flex-col items-center" variants={fadeRightVariants}>
                     <FaTrophy className="text-5xl mb-2" />
                     <h2 className="text-4xl font-bold">
@@ -77,7 +74,6 @@ const Stats = () => {
                     <p className="text-lg">Winning Rewards</p>
                 </motion.div>
 
-                {/** Completed Projects */}
                 <motion.div className="flex flex-col items-center" variants={fadeRightVariants}>
                     <FaProjectDiagram className="text-5xl mb-2" />
                     <h2 className="text-4xl font-bold">

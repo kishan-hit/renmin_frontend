@@ -20,7 +20,6 @@ const Home = () => {
     <div className="relative flex flex-col min-h-screen bg-red-200">
       <Modal open={isModalOpen} handleClose={() => setIsModalOpen(false)} />
 
-      {/* Content stays in the background */}
       <div className={isModalOpen ? "blur-md pointer-events-none" : ""}>
         <NavBar />
         <AboutUs />
