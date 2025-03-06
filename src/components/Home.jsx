@@ -6,7 +6,7 @@ import NavBar from "./NavBar";
 import AboutUs from "./AboutUs";
 import OurSuccessfulVisas from "./OurSuccessfulVisas";
 import Stats from "./Stats";
-import CustomModal from "./CustomModal";
+import Modal from "./Modal";
 
 const Home = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -18,10 +18,7 @@ const Home = () => {
 
   return (
     <div className="relative flex flex-col min-h-screen bg-red-200">
-      <CustomModal
-        open={isModalOpen}
-        handleClose={() => setIsModalOpen(false)}
-      />
+      <Modal open={isModalOpen} handleClose={() => setIsModalOpen(false)} />
 
       {/* Content stays in the background */}
       <div className={isModalOpen ? "blur-md pointer-events-none" : ""}>

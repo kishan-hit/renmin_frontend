@@ -13,8 +13,8 @@ import {
   ListItemText,
   ListItemSecondaryAction,
 } from "@mui/material";
-import NavBar from "./NavBar";
-import Footer from "./Footer";
+import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
 import { useTheme } from "@mui/material/styles";
 
 const scholarships = [
@@ -70,10 +70,10 @@ const Scholarship = () => {
       {/* Background */}
       <div
         style={{
-          background: "white",
           minHeight: "100vh",
           padding: "120px 0",
         }}
+        className="bg-gray-100"
       >
         <Container maxWidth="lg">
           {/* Page Title */}
