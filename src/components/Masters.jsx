@@ -7,11 +7,6 @@ const fadeInVariants = {
     visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
 };
 
-const cardVariants = {
-    hidden: { opacity: 0, scale: 0.8 },
-    visible: { opacity: 1, scale: 1, transition: { duration: 0.8, ease: "easeOut" } },
-};
-
 const Masters = () => {
     return (
         <section className="bg-gray-100 py-12 px-6 md:px-16 lg:px-32 mt-16 md:mt-20">
@@ -158,6 +153,122 @@ const Masters = () => {
                 expenses.
             </motion.div>
 
+            <motion.ol
+                className="list-decimal list-inside text-blue-900 text-lg space-y-6 mx-auto mb-6"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+            >
+                <motion.li variants={fadeInVariants}>
+                    <span className="font-bold text-blue-900">
+                        Chinese Government Scholarship (CGS):
+                    </span>
+                    <span className="text-gray-700">
+                        {" "}
+                        The Chinese Government Scholarship is one of the most well-known scholarships
+                        for international students. This scholarship is offered by the China Scholarship
+                        Council (CSC) and is available for both undergraduate and graduate programs. It
+                        covers tuition fees, accommodation, medical insurance, and a living stipend.
+                    </span>
+
+                    <motion.ul className="list-disc list-inside text-gray-700 text-base space-y-2 mt-2 pl-6">
+                        <motion.li variants={fadeInVariants}>
+                            <span className="font-semibold text-gray-900">Stipend:</span> The living stipend for Master’s students typically ranges from CNY 2,000 to CNY 3,000 per month depending on the university.
+                        </motion.li>
+                        <motion.li variants={fadeInVariants}>
+                            <span className="font-semibold text-gray-900">Duration:</span> 2-3 years for Master’s programs.
+                        </motion.li>
+                        <motion.li variants={fadeInVariants}>
+                            <span className="font-semibold text-gray-900">Eligibility:</span> Open to all international students. Applicants must meet the university’s admission requirements and be under the age of 35.
+                        </motion.li>
+                    </motion.ul>
+                </motion.li>
+
+                <motion.li variants={fadeInVariants}>
+                    <span className="font-bold text-blue-900">
+                        Confucius Institute Scholarship:
+                    </span>
+                    <span className="text-gray-700">
+                        {" "}
+                        The Confucius Institute Scholarship is mainly for students who are interested in
+                        learning Chinese language and culture. However, it also covers Master’s degree
+                        programs in Chinese language and culture-related fields. This scholarship is
+                        intended for students who plan to become ambassadors for Chinese language and
+                        culture worldwide.
+                    </span>
+
+                    <motion.ul className="list-disc list-inside text-gray-700 text-base space-y-2 mt-2 pl-6">
+                        <motion.li variants={fadeInVariants}>
+                            <span className="font-semibold text-gray-900">Stipend:</span> Provides living expenses, accommodation, and tuition fees, along
+                            with a monthly allowance for living expenses.
+                        </motion.li>
+                        <motion.li variants={fadeInVariants}>
+                            <span className="font-semibold text-gray-900">Duration:</span> Typically 1-2 years for Master’s programs.
+                        </motion.li>
+                        <motion.li variants={fadeInVariants}>
+                            <span className="font-semibold text-gray-900">Eligibility:</span> Open to international students who meet the program’s academic
+                            requirements.
+                        </motion.li>
+                    </motion.ul>
+                </motion.li>
+
+                <motion.li variants={fadeInVariants}>
+                    <span className="font-bold text-blue-900">
+                        University-Specific Scholarships:
+                    </span>
+                    <span className="text-gray-700">
+                        {" "}
+                        Many Chinese universities offer their own scholarships to attract international
+                        students. These scholarships may cover full or partial tuition fees, accommodation,
+                        and sometimes living expenses. Some examples include:
+                    </span>
+
+                    <motion.ul className="list-disc list-inside text-gray-700 text-base space-y-2 mt-2 mb-2 pl-6">
+                        <motion.li variants={fadeInVariants}>
+                            <span className="font-semibold text-gray-900">Tsinghua University Scholarship</span>
+                        </motion.li>
+                        <motion.li variants={fadeInVariants}>
+                            <span className="font-semibold text-gray-900">Fudan University Scholarship</span>
+                        </motion.li>
+                        <motion.li variants={fadeInVariants}>
+                            <span className="font-semibold text-gray-900">Shanghai Jiao Tong University Scholarship</span>
+                        </motion.li>
+                        <motion.li variants={fadeInVariants}>
+                            <span className="font-semibold text-gray-900">Beijing Normal University Scholarship</span>
+                        </motion.li>
+                    </motion.ul>
+                    <span className="text-gray-700">
+                        These scholarships are offered based on academic performance, and each
+                        university has its own criteria and application process. Renmin Education
+                        Consultancy can help students identify these scholarships and guide them through
+                        the application process.
+                    </span>
+                </motion.li>
+
+                <motion.li variants={fadeInVariants}>
+                    <span className="font-bold text-blue-900">
+                        Belt and Road Scholarship:
+                    </span>
+                    <span className="text-gray-700">
+                        {" "}
+                        This scholarship is part of China’s initiative to enhance its influence and foster
+                        closer ties with countries along the Belt and Road route. Indian students and
+                        students from other countries in this initiative can apply for this scholarship to
+                        pursue a Master’s degree in China.
+                    </span>
+
+                    <motion.ul className="list-disc list-inside text-gray-700 text-base space-y-2 mt-2 pl-6">
+                        <motion.li variants={fadeInVariants}>
+                            <span className="font-semibold text-gray-900">Stipend:</span> Provides coverage for tuition fees, accommodation, and living expenses.
+                        </motion.li>
+                        <motion.li variants={fadeInVariants}>
+                            <span className="font-semibold text-gray-900">Eligibility:</span> Open to students from countries along the Belt and Road route. Applicants must meet university admission requirements.
+                        </motion.li>
+                    </motion.ul>
+                </motion.li>
+
+            </motion.ol>
+
             <motion.h4
                 className="text-gray-900 text-xl mx-auto md:mt-2 lg:mt-4 mb-2 font-bold"
                 initial="hidden"
@@ -208,6 +319,133 @@ const Masters = () => {
                         access to cutting-edge research and internships.</span>
                 </motion.li>
             </motion.ol>
+
+            <motion.h4
+                className="text-gray-900 text-xl mx-auto md:mt-2 lg:mt-4 mb-2 font-bold"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={fadeInVariants}
+            >
+                Master’s Programs Offered in China for International Students -
+            </motion.h4>
+
+            <motion.div
+                className="text-gray-700 text-lg mx-auto mb-6"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={fadeInVariants}
+            >
+                China offers a diverse range of Master’s programs in various fields, including:
+            </motion.div>
+
+            <motion.ol
+                className="list-decimal list-inside text-blue-900 text-lg space-y-4 mx-auto mb-6"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+            >
+                <motion.li variants={fadeInVariants}>
+                    <span className="font-bold text-blue-900">Master of Business Administration (MBA):</span><span className='text-gray-700'> Studying for an MBA in China provides students with a solid understanding of
+                        business practices in one of the world’s largest economies. Many top Chinese
+                        universities offer MBA programs in English that are internationally recognized.</span>
+                </motion.li>
+                <motion.li variants={fadeInVariants}>
+                    <span className="font-bold text-blue-900">Master in Engineering and Technology:</span><span className='text-gray-700'> China is at the forefront of technological innovation. Many universities offer Master’s
+                        programs in engineering, including civil engineering, mechanical engineering,
+                        electrical engineering, computer science, and biotechnology.</span>
+                </motion.li>
+                <motion.li variants={fadeInVariants}>
+                    <span className="font-bold text-blue-900">Master in Medicine and Healthcare:</span><span className='text-gray-700'> China’s medical institutions are renowned for their research in pharmacy, public
+                        health, medical sciences, and clinical medicine. International students can pursue
+                        degrees in various medical fields at universities such as Peking University and
+                        Fudan University.</span>
+                </motion.li>
+                <motion.li variants={fadeInVariants}>
+                    <span className="font-bold text-blue-900">Master in Social Sciences:</span><span className='text-gray-700'> Fields such as international relations, sociology, psychology, and law are highly
+                        popular among international students. These programs are offered in both English
+                        and Chinese.</span>
+                </motion.li>
+                <motion.li variants={fadeInVariants}>
+                    <span className="font-bold text-blue-900">Master in Arts and Design:</span><span className='text-gray-700'> China’s rich cultural heritage provides an excellent environment for students to
+                        pursue programs in fine arts, fashion design, architecture, and graphic design.</span>
+                </motion.li>
+            </motion.ol>
+
+            <motion.h4
+                className="text-gray-900 text-xl mx-auto md:mt-2 lg:mt-4 mb-2 font-bold"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={fadeInVariants}
+            >
+                How Renmin Education Consultancy Helps You Secure Admission and Scholarships -
+            </motion.h4>
+
+            <motion.div
+                className="text-gray-700 text-lg mx-auto mb-6"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={fadeInVariants}
+            >
+                Renmin Education Consultancy is committed to helping Indian and international
+                students secure admission to top Chinese universities and obtain scholarships.
+                Here’s how we assist:
+            </motion.div>
+
+            <motion.ol
+                className="list-decimal list-inside text-blue-900 text-lg space-y-4 mx-auto mb-6"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+            >
+                <motion.li variants={fadeInVariants}>
+                    <span className="font-bold text-blue-900">University Selection and Program Guidance:</span><span className='text-gray-700'> Our team helps students select the right university and program based on their
+                        academic background, career goals, and financial situation. We provide detailed
+                        information on various Chinese universities, their programs, and scholarship
+                        opportunities.</span>
+                </motion.li>
+                <motion.li variants={fadeInVariants}>
+                    <span className="font-bold text-blue-900">Application Assistance:</span><span className='text-gray-700'> We assist students in preparing and submitting their applications, ensuring that they
+                        meet all the requirements and deadlines. We help with preparing documents such
+                        as transcripts, recommendation letters, personal statements, and more.</span>
+                </motion.li>
+                <motion.li variants={fadeInVariants}>
+                    <span className="font-bold text-blue-900">Scholarship Application Support:</span><span className='text-gray-700'> Renmin Education Consultancy has a thorough understanding of the various
+                        scholarships available to international students in China. We guide students through the entire scholarship application process, including preparing the necessary
+                        documents and ensuring they meet the eligibility criteria.</span>
+                </motion.li>
+                <motion.li variants={fadeInVariants}>
+                    <span className="font-bold text-blue-900">Visa Guidance:</span><span className='text-gray-700'> We assist students in obtaining the Chinese student visa (X Visa) by guiding them
+                        through the necessary.</span>
+                </motion.li>
+            </motion.ol>
+
+            <motion.h4
+                className="text-gray-900 text-xl mx-auto md:mt-2 lg:mt-4 mb-2 font-bold"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={fadeInVariants}
+            >
+                Conclusion -
+            </motion.h4>
+
+            <motion.div
+                className="text-gray-700 text-lg mx-auto mb-6"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={fadeInVariants}
+            >
+                Certainly! Here’s more detailed information on Studying Bachelor’s Courses in China
+                Under Scholarships with Renmin Education Consultancy’s guidance. This extended
+                content will provide further insights into the advantages of studying in China, the
+                scholarship application process, and additional resources that Renmin Education
+                Consultancy offers to support students from India and abroad.
+            </motion.div>
 
         </section>
     )
