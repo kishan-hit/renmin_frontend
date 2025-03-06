@@ -6,9 +6,7 @@ import AboutPage from "../pages/AboutPage";
 import ServicePage from "../pages/ServicePage";
 import Gallery from "../pages/Gallery";
 import Scholarship from "../pages/Scholarship";
-import CoursePage from "../pages/CoursePage";
 import CountryPage from "../pages/CountryPage";
-import Scholarship from "../components/Scholarship";
 import ChineseLanguage from "../pages/Courses/Chinese";
 import MastersPage from "../pages/Courses/MastersPage";
 
