@@ -202,13 +202,15 @@ const CountryCourse = ({ course }) => {
           </div>
         )}
         {/* Scholarships Section */}
-        <Typography
-          variant="h6"
-          align="center"
-          className="!font-bold !mt-8 text-blue-900"
-        >
-          Scholarships Available
-        </Typography>
+        {course?.scholarships != null && (
+          <Typography
+            variant="h6"
+            align="center"
+            className="!font-bold !mt-8 text-blue-900"
+          >
+            Scholarships Available
+          </Typography>
+        )}
         <List className="pl-5">
           {course?.scholarships?.map((scholarship, index) => (
             <motion.div
@@ -234,6 +236,138 @@ const CountryCourse = ({ course }) => {
             </motion.div>
           ))}
         </List>
+
+        {/* Cost */}
+        {course?.costOfStudy && (
+          <>
+            {/* Section Title */}
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true, amount: 0.2 }}
+              className="mt-12"
+            >
+              <Typography
+                variant="h5"
+                className="!font-bold !mb-6 !text-[#bf1d1d] !text-center 
+                   !tracking-wide !md:text-3xl !text-2xl"
+              >
+                {course?.costOfStudy.title}
+              </Typography>
+            </motion.div>
+
+            {/* Cost Breakdown */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-12">
+              {["mbbs", "pg"].map((program, index) => (
+                <motion.div
+                  key={index}
+                  className="flex flex-col bg-white shadow-[0px_4px_10px_#bf1d1d] p-6 rounded-lg border border-gray-200 
+                     hover:shadow-[0px_6px_14px_#bf1d1d] transition-shadow duration-300"
+                  initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.5, delay: index * 0.2 }}
+                  viewport={{ once: true, amount: 0.2 }}
+                >
+                  {/* Program Title */}
+                  <Typography
+                    variant="h6"
+                    className="!font-semibold text-gray-900 mb-3"
+                  >
+                    {course?.costOfStudy[program].title}
+                  </Typography>
+
+                  {/* Tuition Fees */}
+                  <Typography
+                    variant="body2"
+                    className="text-gray-600 leading-relaxed !font-semibold"
+                  >
+                    <strong>Tuition Fees:</strong>{" "}
+                    {course?.costOfStudy[program].tuitionFees}
+                  </Typography>
+
+                  {/* Living Expenses */}
+                  <Typography
+                    variant="body2"
+                    className="text-gray-600 leading-relaxed !font-semibold"
+                  >
+                    <strong>Living Expenses:</strong>{" "}
+                    {course?.costOfStudy[program].livingExpenses}
+                  </Typography>
+
+                  {/* Total Cost (Only for MBBS) */}
+                  {course?.costOfStudy[program]?.totalCost && (
+                    <Typography
+                      variant="body2"
+                      className="text-gray-600 leading-relaxed !font-semibold"
+                    >
+                      <strong>Total Cost:</strong>{" "}
+                      {course?.costOfStudy[program]?.totalCost}
+                    </Typography>
+                  )}
+                </motion.div>
+              ))}
+            </div>
+          </>
+        )}
+
+        {/* apply */}
+        <>
+          {/* Section Title */}
+          <Typography
+            variant="h6"
+            align="center"
+            className="!font-bold !mt-8 text-blue-900"
+          >
+            {course?.howToApply?.title}
+          </Typography>
+
+          <Typography
+            variant="body1"
+            align="center"
+            className="!text-gray-600 !font-semibold !mt-2 !max-w-2xl !mx-auto"
+          >
+            {course?.howToApply?.description}
+          </Typography>
+
+          {/* Steps List */}
+          <List className="pl-5 !pt-0 !mt-4">
+            {course?.howToApply?.steps.map((step, index) => (
+              <motion.div
+                key={index}
+                initial="hidden"
+                animate="visible"
+                custom={index}
+                variants={listItemAnimation}
+                className="w-full flex"
+              >
+                <ListItem
+                  className="mt-4 flex items-center space-x-4 p-4 bg-white shadow-[2px_2px_2px_#cf9393] rounded-lg w-full 
+                hover:shadow-[0px_6px_14px_#cf9393] cursor-pointer transition-shadow duration-300"
+                >
+                  <ListItemText
+                    primary={
+                      <Typography
+                        variant="subtitle1"
+                        className="!font-semibold"
+                      >
+                        {step.title}
+                      </Typography>
+                    }
+                    secondary={
+                      <Typography
+                        variant="body2"
+                        className="!text-gray-600 !font-semibold"
+                      >
+                        {step.description}
+                      </Typography>
+                    }
+                  />
+                </ListItem>
+              </motion.div>
+            ))}
+          </List>
+        </>
       </div>
     </>
   );
