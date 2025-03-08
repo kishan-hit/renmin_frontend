@@ -27,7 +27,7 @@ const Masters = () => {
                 viewport={{ once: true }}
                 variants={fadeInVariants}
             >
-                Study Master’s in China Under Scholarship with Handsome Stipend for Indian &amp; International Students with Renmin Education Consultancy
+                Study Master’s in China Under Scholarship with Handsome Stipend for Indian &amp; International Students with Renmin Education Consultancy -
             </motion.h4>
 
             <motion.div

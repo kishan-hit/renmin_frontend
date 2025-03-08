@@ -9,6 +9,9 @@ import Scholarship from "../pages/Scholarship";
 import CountryPage from "../pages/CountryPage";
 import ChineseLanguage from "../pages/Courses/Chinese";
 import MastersPage from "../pages/Courses/MastersPage";
+import BachelorsPage from "../pages/Courses/BachelorsPage";
+import PhdPage from "../pages/Courses/PhdPage";
+import MbbsPage from "../pages/Courses/MbbsPage";
 
 const AppRoutes = () => {
   return (
@@ -24,6 +27,9 @@ const AppRoutes = () => {
         <Route path="/countries/:countryName" element={<CountryPage />} />
         <Route path="/courses/chinese" element={<ChineseLanguage />} />
         <Route path="/courses/masters" element={<MastersPage />} />
+        <Route path="/courses/bachelors" element={<BachelorsPage />} />
+        <Route path="/courses/phd" element={<PhdPage />} />
+        <Route path="/courses/mbbs" element={<MbbsPage />} />
         {/* will be replaced in future with home page or 404 page */}
         {/* <Route path="*" element={<NotFound />} />  */}
       </Routes>
