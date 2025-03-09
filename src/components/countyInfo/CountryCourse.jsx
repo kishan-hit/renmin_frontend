@@ -237,7 +237,6 @@ const CountryCourse = ({ course }) => {
           ))}
         </List>
 
-        {/* Cost */}
         {course?.costOfStudy && (
           <>
             {/* Section Title */}
@@ -250,8 +249,7 @@ const CountryCourse = ({ course }) => {
             >
               <Typography
                 variant="h5"
-                className="!font-bold !mb-6 !text-[#bf1d1d] !text-center 
-                   !tracking-wide !md:text-3xl !text-2xl"
+                className="!font-bold !mb-6 !text-[#bf1d1d] !text-center !tracking-wide !md:text-3xl !text-2xl"
               >
                 {course?.costOfStudy.title}
               </Typography>
@@ -259,54 +257,59 @@ const CountryCourse = ({ course }) => {
 
             {/* Cost Breakdown */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-12">
-              {["mbbs", "pg"].map((program, index) => (
-                <motion.div
-                  key={index}
-                  className="flex flex-col bg-white shadow-[0px_4px_10px_#bf1d1d] p-6 rounded-lg border border-gray-200 
-                     hover:shadow-[0px_6px_14px_#bf1d1d] transition-shadow duration-300"
-                  initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.5, delay: index * 0.2 }}
-                  viewport={{ once: true, amount: 0.2 }}
-                >
-                  {/* Program Title */}
-                  <Typography
-                    variant="h6"
-                    className="!font-semibold text-gray-900 mb-3"
+              {course?.costOfStudy?.programs?.map((program, index, arr) => {
+                const isLastOdd =
+                  arr.length % 2 !== 0 && index === arr.length - 1;
+                return (
+                  <motion.div
+                    key={index}
+                    className={`flex flex-col bg-white shadow-[0px_4px_10px_#bf1d1d] p-6 rounded-lg border border-gray-200 hover:shadow-[0px_6px_14px_#bf1d1d] transition-shadow duration-300 ${
+                      isLastOdd
+                        ? "lg:col-span-2 flex justify-center items-center "
+                        : ""
+                    }`}
+                    initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.5, delay: index * 0.2 }}
+                    viewport={{ once: true, amount: 0.2 }}
                   >
-                    {course?.costOfStudy[program].title}
-                  </Typography>
+                    {/* Program Title */}
+                    <Typography
+                      variant="h6"
+                      className="!font-semibold text-gray-900 mb-3"
+                    >
+                      {program?.title}
+                    </Typography>
 
-                  {/* Tuition Fees */}
-                  <Typography
-                    variant="body2"
-                    className="text-gray-600 leading-relaxed !font-semibold"
-                  >
-                    <strong>Tuition Fees:</strong>{" "}
-                    {course?.costOfStudy[program].tuitionFees}
-                  </Typography>
-
-                  {/* Living Expenses */}
-                  <Typography
-                    variant="body2"
-                    className="text-gray-600 leading-relaxed !font-semibold"
-                  >
-                    <strong>Living Expenses:</strong>{" "}
-                    {course?.costOfStudy[program].livingExpenses}
-                  </Typography>
-
-                  {/* Total Cost (Only for MBBS) */}
-                  {course?.costOfStudy[program]?.totalCost && (
+                    {/* Tuition Fees */}
                     <Typography
                       variant="body2"
                       className="text-gray-600 leading-relaxed !font-semibold"
                     >
-                      <strong>Total Cost:</strong>{" "}
-                      {course?.costOfStudy[program]?.totalCost}
+                      <strong>Tuition Fees:</strong> {program?.tuitionFees}
                     </Typography>
-                  )}
-                </motion.div>
-              ))}
+
+                    {/* Living Expenses */}
+                    <Typography
+                      variant="body2"
+                      className="text-gray-600 leading-relaxed !font-semibold"
+                    >
+                      <strong>Living Expenses:</strong>{" "}
+                      {program?.livingExpenses}
+                    </Typography>
+
+                    {/* Total Cost (Only for MBBS) */}
+                    {program?.totalCost && (
+                      <Typography
+                        variant="body2"
+                        className="text-gray-600 leading-relaxed !font-semibold"
+                      >
+                        <strong>Total Cost:</strong> {program?.totalCost}
+                      </Typography>
+                    )}
+                  </motion.div>
+                );
+              })}
             </div>
           </>
         )}
