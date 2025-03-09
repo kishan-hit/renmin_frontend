@@ -450,7 +450,39 @@ const Phd = () => {
             Road Scholarship, or university-specific scholarships. We guide students in filling out
             application forms, preparing other required documents.</span>
         </motion.li>
+        <motion.li variants={fadeInVariants}>
+          <span className="font-bold text-blue-900">Visa Guidance and Documentation:</span><span className='text-gray-700'> Our team helps students with the visa application process. We guide students in obtaining the Chinese student visa (X Visa) by ensuring that all documentation is in order and helping them understand the visa requirements.
+          </span>
+        </motion.li>
+        <motion.li variants={fadeInVariants}>
+          <span className="font-bold text-blue-900">Pre-Departure Assistance:</span><span className='text-gray-700'> Once you have been accepted into a university and received your scholarship, Renmin Education Consultancy continues to provide assistance, ensuring a smooth transition to China. This includes advice on accommodation, health insurance, and other practical aspects of studying abroad.
+          </span>
+        </motion.li>
+        <motion.li variants={fadeInVariants}>
+          <span className="font-bold text-blue-900">Post-Arrival Support:</span><span className='text-gray-700'> Even after you arrive in China, Renmin Education Consultancy offers continued support. We help students adjust to life in China, understand the local culture, and ensure that they have all the resources necessary for a successful academic experience.
+          </span>
+        </motion.li>
       </motion.ol>
+
+      <motion.h4
+        className="text-gray-900 text-xl mx-auto md:mt-2 lg:mt-4 mb-2 font-bold"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={fadeInVariants}
+      >
+        Conclusion -
+      </motion.h4>
+
+      <motion.div
+        className="text-gray-700 text-lg mx-auto mb-6"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={fadeInVariants}
+      >
+        Studying for a PhD in China offers international students, especially from India, a wealth of opportunities to advance their academic careers while benefiting from a rich cultural experience. With top-tier universities, state-of-the-art research facilities, and a range of scholarships that make education affordable, China is an increasingly popular destination for postgraduate studies. Renmin Education Consultancy plays a pivotal role in helping students navigate the application process, secure scholarships, and transition smoothly into their academic journey. Whether you are looking to pursue cutting-edge research, gain exposure to a global job market, or immerse yourself in a dynamic cultural setting, a PhD in China could be the stepping stone to a successful future.
+      </motion.div>
     </section>
   )
 }
