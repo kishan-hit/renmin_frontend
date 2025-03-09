@@ -124,7 +124,6 @@ const AboutUs = () => {
   };
 
   const countryKeys = Object.keys(countryData);
-  const countryPhoneCodeKeys = Object.keys(countryPhoneCodes);
   const [selectedCountry, setSelectedCountry] = useState(countryKeys[0]);
   const [phoneCode, setPhoneCode] = useState(countryPhoneCodes[countryKeys[0]]);
   const [selectedState, setSelectedState] = useState("");
