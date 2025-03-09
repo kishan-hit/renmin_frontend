@@ -339,20 +339,22 @@ const countriesData = {
         title: "Cost of Studying MBBS and PG in Russia",
         description:
           "The cost of studying MBBS and PG courses in Russia is affordable compared to Western countries. Below is an approximate breakdown of the costs:",
-        mbbs: {
-          title: "MBBS Programs",
-          tuitionFees:
-            "$3,000 to $7,000 per year (depending on the university)",
-          livingExpenses: "$100 to $300 per month",
-          totalCost:
-            "$20,000 to $40,000 (including tuition and living expenses)",
-        },
-        pg: {
-          title: "PG Programs",
-          tuitionFees:
-            "$4,000 to $8,000 per year (depending on the specialization and university)",
-          livingExpenses: "$100 to $300 per month",
-        },
+        programs: [
+          {
+            title: "MBBS Programs",
+            tuitionFees:
+              "$3,000 to $7,000 per year (depending on the university)",
+            livingExpenses: "$100 to $300 per month",
+            totalCost:
+              "$20,000 to $40,000 (including tuition and living expenses)",
+          },
+          {
+            title: "PG Programs",
+            tuitionFees:
+              "$4,000 to $8,000 per year (depending on the specialization and university)",
+            livingExpenses: "$100 to $300 per month",
+          },
+        ],
       },
       howToApply: {
         title:
@@ -419,6 +421,201 @@ const countriesData = {
 
     conclusion:
       "Studying MBBS and PG courses in Russia offers Indian and international students a unique opportunity to receive high-quality medical education at affordable rates. With globally recognized degrees, excellent clinical training, and a rich cultural experience, Russia is an ideal destination for aspiring doctors. Renmin Education Consultancy is your trusted partner in navigating the entire process—from choosing the right university to securing scholarships, visas, and accommodation. Start your journey to study in Russia today with Renmin Education Consultancy and take the first step toward a successful medical career!",
+  },
+  // data for ukraine
+  kyrgyzstan: {
+    title:
+      "Study MBBS in Kyrgyzstan for Indian & International Students with Renmin Education Consultancy",
+    introduction:
+      "Kyrgyzstan has become one of the most popular destinations for Indian and international students aspiring to pursue MBBS (Bachelor of Medicine and Bachelor of Surgery). The country offers affordable and high-quality medical education, attracting thousands of students each year from countries like India, Nepal, Bangladesh, and beyond. Kyrgyzstan is known for its low tuition fees, English-medium programs, and a simple admission process that makes it an attractive destination for aspiring doctors. Renmin Education Consultancy is a leading educational consultancy that assists students in their journey to study MBBS in Kyrgyzstan. From selecting the right university to securing scholarships, processing admissions, and providing visa assistance, Renmin Education Consultancy is your trusted partner for pursuing a medical degree in Kyrgyzstan. This detailed guide will walk you through the reasons why Kyrgyzstan is an ideal place to study MBBS, the benefits of studying in this Central Asian country, and how Renmin Education Consultancy can help you secure admission to top medical universities in Kyrgyzstan.",
+    whyStudy: [
+      {
+        title: "Affordable Medical Education",
+        description:
+          "One of the primary reasons why students choose Kyrgyzstan for MBBS is the affordability of education. Tuition fees range between $3,000 to $6,000 per year, making it an economical choice. Additionally, the cost of living is significantly lower compared to Western countries, making it budget-friendly.",
+        icon: <FaMoneyBillWave className="text-[#bf1d1d] text-4xl" />,
+      },
+      {
+        title: "Globally Recognized Medical Degrees",
+        description:
+          "Medical universities in Kyrgyzstan are recognized by prestigious international bodies such as WHO and MCI, ensuring that graduates can practice medicine globally.",
+        icon: <FaGraduationCap className="text-[#bf1d1d] text-4xl" />,
+      },
+      {
+        title: "No Entrance Exams",
+        description:
+          "Kyrgyzstan does not require international students to take entrance exams. Admission is based on academic performance, making the process simpler and less stressful.",
+        icon: <FaFileAlt className="text-[#bf1d1d] text-4xl" />,
+      },
+      {
+        title: "English-Medium Programs",
+        description:
+          "Most medical universities in Kyrgyzstan offer MBBS programs in English, allowing international students to study without language barriers.",
+        icon: <FaLanguage className="text-[#bf1d1d] text-4xl" />,
+      },
+      {
+        title: "Experienced Faculty and Modern Infrastructure",
+        description:
+          "Kyrgyzstan's medical universities boast state-of-the-art facilities and experienced faculty, providing hands-on clinical exposure through internships.",
+        icon: <FaUniversity className="text-[#bf1d1d] text-4xl" />,
+      },
+      {
+        title: "Diverse and Welcoming Student Community",
+        description:
+          "Kyrgyzstan hosts students from various countries, creating a multicultural environment that enriches the learning experience.",
+        icon: <FaTheaterMasks className="text-[#bf1d1d] text-4xl" />,
+      },
+    ],
+    renminEducation: {
+      title: "Why Choose Renmin Education Consultancy?",
+      description:
+        "Renmin Education Consultancy offers personalized counseling, university selection assistance, document guidance, scholarship applications, visa processing, and pre-departure briefings for students aspiring to study MBBS in Kyrgyzstan.",
+      services: [
+        {
+          title: "University Selection Assistance",
+          icon: <FaUniversity className="text-[#bf1d1d] text-2xl" />,
+        },
+        {
+          title: "Admission Process Guidance",
+          icon: <FaUserGraduate className="text-[#bf1d1d] text-2xl" />,
+        },
+        {
+          title: "Scholarship Assistance",
+          icon: <FaMoneyCheckAlt className="text-[#bf1d1d] text-2xl" />,
+        },
+        {
+          title: "Visa Assistance",
+          icon: <FaPassport className="text-[#bf1d1d] text-2xl" />,
+        },
+        {
+          title: "Accommodation and Travel Assistance",
+          icon: <FaHotel className="text-[#bf1d1d] text-2xl" />,
+        },
+        {
+          title: "Pre-Departure Briefing",
+          icon: <FaPlaneDeparture className="text-[#bf1d1d] text-2xl" />,
+        },
+      ],
+    },
+    mbbs: {
+      title: "Study MBBS in Kyrgyzstan Under Scholarship",
+      description:
+        "MBBS in Kyrgyzstan is an attractive option due to its affordable tuition fees, quality education, and practical clinical training. Medical programs are offered in English, ensuring no language barriers, and graduates receive globally recognized degrees.",
+      keyFeatures: {
+        Affordability:
+          "The tuition fees for MBBS in Kyrgyzstan are much lower than in Western countries and even compared to medical schools in India. On average, students can expect to pay around $3,000 to $6,000 per year in tuition fees. This is significantly more affordable than private medical schools in India or abroad, making Kyrgyzstan an ideal choice for students who are seeking a cost-effective education.",
+        QualityEducation:
+          "Kyrgyzstan's medical universities follow a curriculum that is designed to meet international standards. These universities are recognized by international organizations such as the WHO, UNESCO, and the Medical Council of India (MCI), ensuring that students receive high-quality education in line with global standards. Students are trained in both theoretical knowledge and practical skills through internships and clinical rotations in local hospitals and medical centers. The hands-on experience is essential for their professional growth and ability to practice medicine globally.",
+        StudentFriendlyEnvironment:
+          "Kyrgyzstan offers a safe and student-friendly environment. The universities are known for their student-centric approach, providing all the necessary support to international students. International students receive assistance with accommodation, language barriers, and cultural adjustments, helping them settle down and focus on their studies. Moreover, Kyrgyzstan's low crime rate, affordable public transport system, and peaceful lifestyle make it a great destination for students looking for a comfortable living environment while pursuing their education",
+        VisaFreeTravelToOtherCountries:
+          "Kyrgyzstan is located in the heart of Central Asia and provides easy access to many other countries in the region. This is advantageous for international students who wish to explore other parts of Central Asia and Europe during their study breaks. Additionally, Kyrgyzstan offers relatively easy visa regulations for international students, allowing them to travel freely.",
+      },
+      topUniversities: [
+        {
+          name: "Kyrgyz State Medical Academy (KSMA)",
+          img: "Kyrgyz State Medical Academy.png",
+          website: "https://www.kgma.kg/en",
+        },
+        {
+          name: "International School of Medicine (ISM)",
+          img: "International School of Medicine.png",
+          website: "https://ism.edu.kg/",
+        },
+        {
+          name: "Asian Medical Institute (AMI)",
+          img: "Asian Medical Institute.png",
+          website: "https://asmi.edu.kg/",
+        },
+        {
+          name: "Jalal-Abad State University",
+          img: "Jalal-Abad State University.png",
+          website: "https://jasu.kg/",
+        },
+        {
+          name: "Osh State University",
+          img: "Osh State University.png",
+          website: "https://www.oshsu.kg/en",
+        },
+      ],
+      costOfStudy: {
+        title: "Cost of Studying MBBS in Kyrgyzstan",
+        description:
+          "Studying MBBS in Kyrgyzstan is affordable compared to many other countries. The total cost of studying in Kyrgyzstan includes tuition fees, accommodation, food, and other living expenses. Here’s a breakdown of the cost:",
+        programs: [
+          {
+            title: "MBBS Programs",
+            tuitionFees: "$3,000 to $6,000 per year",
+            accommodation: " $500 to $1,000 per year",
+            livingExpenses: "$100 to $300 per month",
+            totalCost:
+              "$20,000 to $35,000 (including tuition and living expenses)",
+          },
+        ],
+      },
+      howToApply: {
+        title:
+          "How to Apply for MBBS in Kyrgyzstan with Renmin Education Consultancy",
+        description:
+          "The process to apply for MBBS in Kyrgyzstan is simple and straightforward. Here’s a step-by-step guide to help you get started.",
+        steps: [
+          {
+            title: "Choose the University",
+            description:
+              "Based on your preferences, budget, and career goals, Renmin Education Consultancy will help you choose the best medical university in Kyrgyzstan.",
+          },
+          {
+            title: "Prepare and Submit Documents",
+            description:
+              "Prepare the necessary documents (12th-grade mark sheet, passport, etc.) and submit them to the consultancy.",
+          },
+          {
+            title: "Get Admission",
+            description:
+              "Renmin Education Consultancy will submit your application to the university and ensure you receive an admission letter.",
+          },
+          {
+            title: "Visa Application",
+            description:
+              "Renmin Education Consultancy will assist you in applying for your student visa.",
+          },
+          {
+            title: "Pre-Departure and Accommodation Assistance",
+            description:
+              "Attend the pre-departure briefing and get ready for your journey to Kyrgyzstan.",
+          },
+        ],
+      },
+    },
+    renminEducationHelp: {
+      title: "How Renmin Education Helps You Get Admission",
+      description:
+        "Renmin Education is your trusted partner in guiding you through the admission process, ensuring you secure scholarships and receive comprehensive support from university selection to visa assistance.",
+      services: [
+        {
+          title: "Expert Consultation",
+          icon: <FaUserGraduate className="text-[#bf1d1d] text-2xl" />,
+        },
+        {
+          title: "Assistance with Scholarship Applications",
+          icon: <FaFileAlt className="text-[#bf1d1d] text-2xl" />,
+        },
+        {
+          title: "Application Processing",
+          icon: <FaClipboardList className="text-[#bf1d1d] text-2xl" />,
+        },
+        {
+          title: "Visa and Accommodation Assistance",
+          icon: <FaPassport className="text-[#bf1d1d] text-2xl" />,
+        },
+        {
+          title: "Pre-Departure Briefing",
+          icon: <FaPlaneDeparture className="text-[#bf1d1d] text-2xl" />,
+        },
+      ],
+    },
+    conclusion:
+      "Kyrgyzstan offers an excellent opportunity for international students to pursue affordable and high-quality MBBS education. With its reputable medical universities, low tuition fees, and student-friendly environment, Kyrgyzstan is a top destination for aspiring doctors. Renmin Education Consultancy provides comprehensive support throughout the admission process, ensuring students are well-prepared for their journey.",
   },
 };
 

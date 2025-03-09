@@ -7,7 +7,10 @@ import countriesData from "../assets/data/countriesData";
 
 const CountryPage = () => {
   const { countryName } = useParams();
+  console.log(countryName);
+
   const countryData = countriesData[countryName?.toLowerCase()];
+  console.log(countriesData);
 
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col">

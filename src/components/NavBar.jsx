@@ -82,13 +82,13 @@ const NavBar = () => {
                 >
                   Russia
                 </div>
-                {/* <div
-                  className="px-4 py-2 cursor-pointer hover:bg-blue-200"
-                  onClick={() => navigate("/countries/krygyzstan")}
-                >
-                  Krygyzstan
-                </div>
                 <div
+                  className="px-4 py-2 cursor-pointer hover:bg-blue-200"
+                  onClick={() => navigate("/countries/kyrgyzstan")}
+                >
+                  kyrgyzstan
+                </div>
+                {/* <div
                   className="px-4 py-2 cursor-pointer hover:bg-blue-200"
                   onClick={() => navigate("/countries/bangladesh")}
                 >
