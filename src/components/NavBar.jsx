@@ -86,7 +86,7 @@ const NavBar = () => {
                   className="px-4 py-2 cursor-pointer hover:bg-blue-200"
                   onClick={() => navigate("/countries/kyrgyzstan")}
                 >
-                  kyrgyzstan
+                  Kyrgyzstan
                 </div>
                 {/* <div
                   className="px-4 py-2 cursor-pointer hover:bg-blue-200"
@@ -208,9 +208,9 @@ const NavBar = () => {
               </div>
               <div
                 className="cursor-pointer hover:bg-blue-200 py-1"
-                onClick={() => navigate("/countries/krygyzstan")}
+                onClick={() => navigate("/countries/kyrgyzstan")}
               >
-                Krygyzstan
+                Kyrgyzstan
               </div>
               <div
                 className="cursor-pointer hover:bg-blue-200 py-1"
