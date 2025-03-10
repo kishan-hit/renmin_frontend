@@ -617,6 +617,342 @@ const countriesData = {
     conclusion:
       "Kyrgyzstan offers an excellent opportunity for international students to pursue affordable and high-quality MBBS education. With its reputable medical universities, low tuition fees, and student-friendly environment, Kyrgyzstan is a top destination for aspiring doctors. Renmin Education Consultancy provides comprehensive support throughout the admission process, ensuring students are well-prepared for their journey.",
   },
+
+  // data for bangladesh
+  bangladesh: {
+    title:
+      "Study MBBS in Bangladesh for Indian & International Students with Renmin Education Consultancy",
+    introduction:
+      "Bangladesh has become one of the most popular destinations for international students seeking to pursue MBBS (Bachelor of Medicine and Bachelor of Surgery). Due to its affordable medical education, high-quality teaching, and the fact that its medical degrees are recognized worldwide, Bangladesh has emerged as an attractive option for Indian and international students. With a growing number of students opting to study MBBS in Bangladesh, the country is gaining recognition for providing medical education at a fraction of the cost compared to Western nations. Renmin Education Consultancy provides a seamless pathway for students to secure admission to top medical universities in Bangladesh.",
+    whyStudy: [
+      {
+        title: "Affordable Medical Education",
+        description:
+          "One of the key reasons why students choose Bangladesh for MBBS is the affordability of education. Tuition fees for MBBS programs typically range between $5,000 to $10,000 per year, and living expenses are reasonable, with monthly costs of around $150 to $300.",
+        icon: <FaMoneyBillWave className="text-[#bf1d1d] text-4xl" />,
+      },
+      {
+        title: "Globally Recognized Degrees",
+        description:
+          "Medical universities in Bangladesh are recognized by international bodies such as the World Health Organization (WHO), Medical Council of India (MCI), UNESCO, and WFME, ensuring that graduates can practice medicine globally.",
+        icon: <FaGraduationCap className="text-[#bf1d1d] text-4xl" />,
+      },
+      {
+        title: "No Entrance Exams",
+        description:
+          "Bangladesh offers a simple admission process for international students, with most universities not requiring entrance exams like NEET. Admission is based on academic performance, making the process straightforward.",
+        icon: <FaFileAlt className="text-[#bf1d1d] text-4xl" />,
+      },
+      {
+        title: "English-Medium Instruction",
+        description:
+          "Many top medical universities in Bangladesh offer MBBS programs in English, eliminating language barriers and creating a global learning environment.",
+        icon: <FaLanguage className="text-[#bf1d1d] text-4xl" />,
+      },
+      {
+        title: "Experienced Faculty and Modern Infrastructure",
+        description:
+          "Bangladesh's medical institutions boast modern infrastructure, experienced faculty, and extensive clinical training, ensuring a high-quality education.",
+        icon: <FaUniversity className="text-[#bf1d1d] text-4xl" />,
+      },
+      {
+        title: "Cultural Similarities and Safe Environment",
+        description:
+          "For Indian students, Bangladesh offers a culturally familiar and safe environment with similar customs and lifestyles, making it easier to adapt and thrive.",
+        icon: <FaTheaterMasks className="text-[#bf1d1d] text-4xl" />,
+      },
+    ],
+    renminEducation: {
+      title: "Why Choose Renmin Education Consultancy?",
+      description:
+        "Renmin Education Consultancy offers personalized counseling, university selection assistance, document guidance, scholarship assistance, visa support, and accommodation arrangements, ensuring a seamless admission process for MBBS students in Bangladesh.",
+      services: [
+        {
+          title: "University Selection Assistance",
+          icon: <FaUniversity className="text-[#bf1d1d] text-2xl" />,
+        },
+        {
+          title: "Admission Guidance and Application Process",
+          icon: <FaUserGraduate className="text-[#bf1d1d] text-2xl" />,
+        },
+        {
+          title: "Scholarship Assistance",
+          icon: <FaMoneyCheckAlt className="text-[#bf1d1d] text-2xl" />,
+        },
+        {
+          title: "Visa Assistance",
+          icon: <FaPassport className="text-[#bf1d1d] text-2xl" />,
+        },
+        {
+          title: "Accommodation and Travel Assistance",
+          icon: <FaHotel className="text-[#bf1d1d] text-2xl" />,
+        },
+        {
+          title: "Pre-Departure Briefing",
+          icon: <FaPlaneDeparture className="text-[#bf1d1d] text-2xl" />,
+        },
+      ],
+    },
+    mbbs: {
+      title: "Study MBBS in Bangladesh",
+      description:
+        "Bangladesh offers high-quality MBBS education at affordable costs. Medical programs are conducted in English, ensuring no language barriers, and graduates receive internationally recognized degrees, making it an attractive option for aspiring doctors.",
+      keyFeatures: {
+        LowTuitionFees:
+          "The cost of studying MBBS in Bangladesh is among the lowest when compared to Western countries. The tuition fees for medical programs in Bangladesh range between $5,000 to $10,000 per year, which is far more affordable than private medical colleges in India or other countries. The overall cost of pursuing an MBBS degree in Bangladesh for six years, including tuition and living expenses, may range between $25,000 and $50,000, which is significantly more affordable than studying in countries like the United States, UK, or Australia.",
+        AccreditedMedicalPrograms:
+          "Bangladesh offers globally recognized medical programs that meet the standards of international medical organizations. The recognition by WHO, MCI, and UNESCO ensures that students graduating from Bangladeshi universities are eligible to practice in various countries. Students are also eligible to appear for licensing exams like FMGE (for Indian students), USMLE (for those wanting to practice in the US), and PLAB (for those wanting to practice in the UK).",
+        ClinicalTraining:
+          "Bangladeshi medical universities provide students with the opportunity to participate in extensive clinical training during their MBBS program. Students get practical exposure by working in some of the country’s best hospitals, allowing them to apply the theoretical knowledge they acquire in the classroom to real-life medical scenarios. This hands-on experience is essential for students who wish to become competent doctors after graduation.",
+        NoLanguageBarrier:
+          "Since most medical universities in Bangladesh offer MBBS programs in English, there is no language barrier for international students. English-medium programs enable students to understand complex medical concepts, participate in classroom discussions, and build their academic skills without any communication problems.",
+        GoodInfrastructureAndFacilities:
+          "The medical universities in Bangladesh are well-equipped with modern infrastructure, including hospitals, libraries, hostels, and research facilities. Students benefit from the advanced technology and educational tools provided by these universities. Furthermore, the universities offer a conducive learning environment with interactive classrooms, seminars, and practical sessions.",
+      },
+      topUniversities: [
+        {
+          name: "Dhaka Medical University",
+          img: "Dhaka Medical University.png",
+          website: "https://dmch.gov.bd/",
+        },
+        {
+          name: "Shaheed Suhrawardy Medical College",
+          img: "Shaheed Suhrawardy Medical College.png",
+          website: "https://www.shsmc.gov.bd/",
+        },
+        {
+          name: "Chittagong Medical College",
+          img: "Chittagong Medical College.png",
+          website: "https://cmch.gov.bd/",
+        },
+        {
+          name: "Enam Medical College",
+          img: "Enam Medical College.png",
+          website: "https://emcbd.info/",
+        },
+        {
+          name: "Bangladesh Medical College",
+          img: "Bangladesh Medical College.png",
+          website: "https://www.bmc-bd.org/",
+        },
+      ],
+      costOfStudy: {
+        title: "Cost of Studying MBBS in Bangladesh",
+        description:
+          "The cost of studying MBBS in Bangladesh is very affordable compared to other countries. Here is an approximate breakdown of the costs:",
+        programs: [
+          {
+            title: "MBBS Programs",
+            tuitionFees: "$5,000 to $10,000 per year",
+            accommodation:
+              "$1,000 to $2,000 per year (depending on whether the student stays in a university hostel or private accommodation)",
+            livingExpenses: "$150 to $300 per month",
+            totalCost:
+              "$25,000 to $50,000 (including tuition fees, accommodation, and living expenses)",
+          },
+        ],
+      },
+    },
+    renminEducationHelp: {
+      title: "How Renmin Education Helps You Get Admission",
+      description:
+        "Renmin Education is your trusted partner in guiding you through the admission process, ensuring that you secure scholarships and receive comprehensive support from university selection to visa assistance.",
+      services: [
+        {
+          title: "Expert Consultation",
+          icon: <FaUserGraduate className="text-[#bf1d1d] text-2xl" />,
+        },
+        {
+          title: "Assistance with Scholarship Applications",
+          icon: <FaFileAlt className="text-[#bf1d1d] text-2xl" />,
+        },
+        {
+          title: "Application Processing",
+          icon: <FaClipboardList className="text-[#bf1d1d] text-2xl" />,
+        },
+        {
+          title: "Visa and Accommodation Assistance",
+          icon: <FaPassport className="text-[#bf1d1d] text-2xl" />,
+        },
+        {
+          title: "Pre-Departure Briefing",
+          icon: <FaPlaneDeparture className="text-[#bf1d1d] text-2xl" />,
+        },
+      ],
+    },
+    conclusion:
+      "Bangladesh offers international students a unique opportunity to pursue an affordable, high-quality MBBS education at globally recognized universities. With low tuition fees, English-medium programs, experienced faculty, and modern infrastructure, Bangladesh is an attractive destination for aspiring doctors. Renmin Education Consultancy provides comprehensive support throughout the admission process, from university selection to visa assistance, ensuring a smooth journey for students.",
+  },
+
+  // data for ukraine
+
+  uzbekistan: {
+    title:
+      "Study MBBS in Uzbekistan for Indian & International Students with Renmin Education Consultancy",
+    introduction:
+      "Uzbekistan, a Central Asian country rich in history and culture, has emerged as a leading destination for international students seeking to pursue MBBS (Bachelor of Medicine and Bachelor of Surgery) degrees. With affordable tuition fees, globally recognized medical programs, and the availability of English-medium courses, Uzbekistan offers an attractive option for Indian and international students wishing to pursue medical studies abroad. Renmin Education Consultancy plays a pivotal role in assisting students from India and other countries to secure admission to top medical universities in Uzbekistan. From university selection and application processing to visa assistance and pre-departure services, Renmin Education Consultancy provides end-to-end support to students in their journey to becoming doctors. This comprehensive guide explores the reasons why Uzbekistan is a preferred destination for MBBS studies, the advantages of studying MBBS in Uzbekistan, the services offered by Renmin Education Consultancy, and the step-by-step process of applying for admission.",
+    whyStudy: [
+      {
+        title: "Affordable Medical Education",
+        description:
+          "One of the primary reasons why students opt to study MBBS in Uzbekistan is the affordability of medical education. Compared to countries like the United States, UK, or India (private medical colleges), the cost of studying MBBS in Uzbekistan is very low. The tuition fees for MBBS programs in Uzbekistan range from $3,000 to $6,000 per year, making it a highly cost-effective option for students. Additionally, the cost of living in Uzbekistan is much lower than in many other countries, allowing students to manage their expenses efficiently. Accommodation, food, and transportation costs are reasonable, making it easier for international students to maintain a comfortable lifestyle during their studies.",
+        icon: <FaMoneyBillWave className="text-[#bf1d1d] text-4xl" />,
+      },
+      {
+        title: "Globally Recognized Degrees",
+        description:
+          "Medical universities in Uzbekistan are recognized by international medical organizations such as the World Health Organization (WHO), UNESCO, and Medical Council of India (MCI). This ensures that students graduating from Uzbek universities are eligible to appear for licensing exams such as the FMGE (Foreign Medical Graduate Examination) in India, the USMLE (United States Medical Licensing Examination), and PLAB (Professional and Linguistic Assessments Board) for the UK.",
+        icon: <FaGraduationCap className="text-[#bf1d1d] text-4xl" />,
+      },
+      {
+        title: "No Entrance Exams",
+        description:
+          "Unlike many countries that require entrance exams for medical school admissions, Uzbekistan offers a simplified admission process for international students. There is no need for students to appear for entrance exams like NEET (National Eligibility Cum Entrance Test) or any other entrance exam. As long as students meet the basic eligibility criteria (such as completing their higher secondary education with subjects like Physics, Chemistry, and Biology), they can apply directly to medical universities in Uzbekistan.",
+        icon: <FaFileAlt className="text-[#bf1d1d] text-4xl" />,
+      },
+      {
+        title: "English-Medium Programs",
+        description:
+          "Many of Uzbekistan's top medical universities offer MBBS programs in English, making it easier for international students, especially those from non-Russian or non-Uzbek speaking countries, to follow the curriculum and communicate with their peers and faculty. The availability of English-medium courses ensures that students can focus on their studies without worrying about language barriers, making the learning experience more effective and enjoyable.",
+        icon: <FaLanguage className="text-[#bf1d1d] text-4xl" />,
+      },
+      {
+        title: "Experienced Faculty and Modern Infrastructure",
+        description:
+          "Uzbekistan boasts several prestigious medical universities that provide students with top-notch academic and clinical education. The faculty members are highly qualified, with many professors having received education and training from prestigious universities in Europe, Russia, and other parts of the world.",
+        icon: <FaUniversity className="text-[#bf1d1d] text-4xl" />,
+      },
+      {
+        title: "Cultural Similarities and Safe Environment",
+        description:
+          "For Indian students, Uzbekistan offers cultural and geographical proximity. The country shares several cultural similarities with India, such as a passion for traditional food, customs, and practices. The daily life and cultural environment are comfortable for Indian students, making it easier for them to adjust to life in Uzbekistan.",
+        icon: <FaTheaterMasks className="text-[#bf1d1d] text-4xl" />,
+      },
+    ],
+    renminEducation: {
+      title: "Why Choose Renmin Education Consultancy?",
+      description:
+        "Renmin Education Consultancy offers personalized counseling, university selection assistance, document guidance, scholarship assistance, visa support, and accommodation arrangements, ensuring a seamless admission process for MBBS students in Uzbekistan.",
+      services: [
+        {
+          title: "University Selection Assistance",
+          icon: <FaUniversity className="text-[#bf1d1d] text-2xl" />,
+        },
+        {
+          title: "Admission Guidance and Application Process",
+          icon: <FaUserGraduate className="text-[#bf1d1d] text-2xl" />,
+        },
+        {
+          title: "Scholarship Assistance",
+          icon: <FaMoneyCheckAlt className="text-[#bf1d1d] text-2xl" />,
+        },
+        {
+          title: "Visa Assistance",
+          icon: <FaPassport className="text-[#bf1d1d] text-2xl" />,
+        },
+        {
+          title: "Accommodation and Travel Assistance",
+          icon: <FaHotel className="text-[#bf1d1d] text-2xl" />,
+        },
+        {
+          title: "Pre-Departure Briefing",
+          icon: <FaPlaneDeparture className="text-[#bf1d1d] text-2xl" />,
+        },
+      ],
+    },
+    mbbs: {
+      title: "Study MBBS in Uzbekistan",
+      description:
+        "Uzbekistan offers high-quality MBBS education at affordable costs. Programs are conducted in English, ensuring no language barriers, and graduates receive internationally recognized degrees.",
+      keyFeatures: {
+        LowTuitionFees:
+          "$3,000 to $6,000 per year for MBBS programs, making it an affordable alternative to private medical colleges in India and the West.",
+        RecognizedMedicalDegrees:
+          "Uzbekistan’s medical degrees are recognized by WHO, MCI, UNESCO, and other global organizations, enabling graduates to practice internationally.",
+        QualityEducationAndResearch:
+          "Uzbekistan offers a high standard of education in medicine. The curriculum is structured to meet international standards, and the universities place a strong emphasis on practical training, clinical experience, and research.",
+        EnglishMediumPrograms:
+          "Most medical universities in Uzbekistan offer MBBS courses in English, eliminating language barriers for international students.",
+        CulturalDiversityAndStudentCommunity:
+          "Uzbekistan has a diverse student community, with international students from various countries, providing a global learning experience.",
+        EasierVisaProcess:
+          "Uzbekistan has a relatively simple visa application process for international students. Once you receive your admission letter from a university in Uzbekistan, the visa application process is straightforward and quick. The university typically provides guidance and assistance throughout the visa application process, ensuring that students can travel to Uzbekistan without hassle.",
+      },
+      topUniversities: [
+        {
+          name: "Tashkent Medical Academy",
+          img: "Tashkent Medical Academy.png",
+          website: "https://tma.uz/en/",
+        },
+        {
+          name: "Andijan State Medical Institute",
+          img: "Andijan State Medical Institute.png",
+          website: "https://adti.uz/en/",
+        },
+        {
+          name: "Samarkand State Medical Institute",
+          img: "Samarkand State Medical Institute.png",
+          website: "https://www.sammu.uz/en",
+        },
+        {
+          name: "Bukhara State Medical Institute",
+          img: "Bukhara State Medical Institute.png",
+          website:
+            "https://www.rmcedu.com/bukhara-state-medical-institute.html",
+        },
+
+        {
+          name: "Karshi State Medical Institute",
+          img: "Karshi State Medical Institute.png",
+          website: "https://qarshidu.uz/en",
+        },
+      ],
+      costOfStudy: {
+        title: "Cost of Studying MBBS in Uzbekistan",
+        description:
+          "The cost of studying MBBS in Uzbekistan is highly affordable compared to Western countries. Below is a breakdown of the estimated costs:",
+        programs: [
+          {
+            title: "MBBS Programs",
+            tuitionFees: "$3,000 to $6,000 per year",
+            accommodation: "$1,000 to $2,000 per year",
+            livingExpenses: "$150 to $300 per month",
+            totalCost:
+              "$20,000 to $35,000 (including tuition and living expenses for 6 years)",
+          },
+        ],
+      },
+    },
+    renminEducationHelp: {
+      title: "How Renmin Education Helps You Get Admission",
+      description:
+        "Renmin Education is your trusted partner in guiding you through the admission process, ensuring that you secure scholarships and receive comprehensive support from university selection to visa assistance.",
+      services: [
+        {
+          title: "Expert Consultation",
+          icon: <FaUserGraduate className="text-[#bf1d1d] text-2xl" />,
+        },
+        {
+          title: "Assistance with Scholarship Applications",
+          icon: <FaFileAlt className="text-[#bf1d1d] text-2xl" />,
+        },
+        {
+          title: "Application Processing",
+          icon: <FaClipboardList className="text-[#bf1d1d] text-2xl" />,
+        },
+        {
+          title: "Visa and Accommodation Assistance",
+          icon: <FaPassport className="text-[#bf1d1d] text-2xl" />,
+        },
+        {
+          title: "Pre-Departure Briefing",
+          icon: <FaPlaneDeparture className="text-[#bf1d1d] text-2xl" />,
+        },
+      ],
+    },
+    conclusion:
+      "Uzbekistan offers international students a unique opportunity to pursue an affordable, high-quality MBBS education at globally recognized universities. With low tuition fees, English-medium programs, experienced faculty, and modern infrastructure, Uzbekistan is an attractive destination for aspiring doctors. Renmin Education Consultancy provides comprehensive support throughout the admission process, from university selection to visa assistance, ensuring a smooth journey for students.",
+  },
 };
 
 export default countriesData;

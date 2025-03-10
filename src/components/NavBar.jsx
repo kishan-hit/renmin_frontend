@@ -88,7 +88,7 @@ const NavBar = () => {
                 >
                   Kyrgyzstan
                 </div>
-                {/* <div
+                <div
                   className="px-4 py-2 cursor-pointer hover:bg-blue-200"
                   onClick={() => navigate("/countries/bangladesh")}
                 >
@@ -99,7 +99,7 @@ const NavBar = () => {
                   onClick={() => navigate("/countries/uzbekistan")}
                 >
                   Uzbekistan
-                </div> */}
+                </div>
               </div>
             )}
           </div>
