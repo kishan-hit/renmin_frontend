@@ -77,7 +77,7 @@ const Services = () => {
                         className="flex items-start bg-white shadow-[0px_4px_10px_#bf1d1d] p-6 rounded-lg border border-gray-200 hover:shadow-[0px_6px_14px_#bf1d1d] transition-shadow duration-300"
                         initial={{ opacity: 0, x: -50 }}
                         whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.5, delay: index * 0.2 }}
+                        transition={{ duration: 0.5, delay: index * 0.1 }}
                         viewport={{ once: true, amount: 0.2 }}
                     >
                         <div className="text-[#bf1d1d] text-4xl mr-4">{service.icon}</div>

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const fadeInVariants = {
     hidden: { opacity: 0, y: 30 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.2, ease: "easeOut" } },
 };
 
 const Masters = () => {
@@ -76,7 +76,7 @@ const Masters = () => {
                 className="list-decimal list-inside text-blue-900 text-lg space-y-4 mx-auto mb-6"
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true, amount: 0.5 }}
+                viewport={{ once: true, amount: 0.2 }}
             >
                 <motion.li variants={fadeInVariants}>
                     <span className="font-bold text-blue-900">World-Class Education System:</span><span className='text-gray-700'> China boasts an impressive number of world-renowned universities, including
@@ -157,7 +157,7 @@ const Masters = () => {
                 className="list-decimal list-inside text-blue-900 text-lg space-y-6 mx-auto mb-6"
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true, amount: 0.5 }}
+                viewport={{ once: true, amount: 0.2 }}
             >
                 <motion.li variants={fadeInVariants}>
                     <span className="font-bold text-blue-900">
@@ -283,7 +283,7 @@ const Masters = () => {
                 className="list-decimal list-inside text-blue-900 text-lg space-y-4 mx-auto mb-6"
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true, amount: 0.5 }}
+                viewport={{ once: true, amount: 0.2 }}
             >
                 <motion.li variants={fadeInVariants}>
                     <span className="font-bold text-blue-900">Reduced Financial Burden:</span><span className='text-gray-700'> Scholarships in China cover a significant portion of tuition fees, accommodation,
@@ -344,7 +344,7 @@ const Masters = () => {
                 className="list-decimal list-inside text-blue-900 text-lg space-y-4 mx-auto mb-6"
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true, amount: 0.5 }}
+                viewport={{ once: true, amount: 0.2 }}
             >
                 <motion.li variants={fadeInVariants}>
                     <span className="font-bold text-blue-900">Master of Business Administration (MBA):</span><span className='text-gray-700'> Studying for an MBA in China provides students with a solid understanding of
@@ -399,7 +399,7 @@ const Masters = () => {
                 className="list-decimal list-inside text-blue-900 text-lg space-y-4 mx-auto mb-6"
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true, amount: 0.5 }}
+                viewport={{ once: true, amount: 0.2 }}
             >
                 <motion.li variants={fadeInVariants}>
                     <span className="font-bold text-blue-900">University Selection and Program Guidance:</span><span className='text-gray-700'> Our team helps students select the right university and program based on their

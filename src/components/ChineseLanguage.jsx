@@ -8,12 +8,12 @@ import { FaMapMarkerAlt } from "react-icons/fa";
 
 const fadeInVariants = {
   hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.2, ease: "easeOut" } },
 };
 
 const cardVariants = {
   hidden: { opacity: 0, scale: 0.8 },
-  visible: { opacity: 1, scale: 1, transition: { duration: 0.8, ease: "easeOut" } },
+  visible: { opacity: 1, scale: 1, transition: { duration: 0.4, ease: "easeOut" } },
 };
 
 const universities = [
@@ -123,7 +123,7 @@ const ChineseLanguage = () => {
         className="list-decimal list-inside text-blue-900 text-lg space-y-4 mx-auto mb-6"
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.5 }}
+        viewport={{ once: true, amount: 0.2 }}
       >
         <motion.li variants={fadeInVariants}>
           <span className="font-bold text-blue-900">Immersive Language Environment:</span><span className='text-gray-700'> China is the birthplace of the Chinese language (Mandarin) and the best place to learn it. By living
@@ -196,7 +196,7 @@ const ChineseLanguage = () => {
         className="list-decimal list-inside text-blue-900 text-lg space-y-4 mx-auto mb-6"
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.5 }}
+        viewport={{ once: true, amount: 0.2 }}
       >
         <motion.li variants={fadeInVariants}>
           <span className="font-bold text-blue-900">Chinese Language Foundation Programs:</span><span className='text-gray-700'> These programs are designed for beginners who have little to no prior knowledge of the Chinese language. The courses focus on the basics of Mandarin, including pronunciation (pinyin), basic
@@ -246,7 +246,7 @@ const ChineseLanguage = () => {
         className="list-decimal list-inside text-blue-900 text-lg space-y-4 mx-auto mb-6"
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.5 }}
+        viewport={{ once: true, amount: 0.2 }}
       >
         <motion.li variants={fadeInVariants}>
           <span className="font-bold text-blue-900">Effective Language Acquisition:</span><span className='text-gray-700'> Living and studying in China provides the best environment for learning the Chinese language. In
@@ -304,7 +304,7 @@ const ChineseLanguage = () => {
         className="list-decimal list-inside text-blue-900 text-lg space-y-4 mx-auto mb-6"
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.5 }}
+        viewport={{ once: true, amount: 0.2 }}
       >
         <motion.li variants={fadeInVariants}>
           <span className="font-bold text-blue-900">University Selection and Admission Assistance:</span><span className='text-gray-700'> Renmin Education Consultancy helps students choose the best Chinese university for their language
@@ -353,7 +353,7 @@ const ChineseLanguage = () => {
         className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8 px-6 md:px-16 lg:px-32 mb-8"
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.5 }}
+        viewport={{ once: true, amount: 0.2 }}
       >
         {universities.map((uni) => (
           <motion.div
@@ -420,7 +420,7 @@ const ChineseLanguage = () => {
         className="list-decimal list-inside text-blue-900 text-lg space-y-4 mx-auto mb-6"
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.5 }}
+        viewport={{ once: true, amount: 0.2 }}
       >
         <motion.li variants={fadeInVariants}>
           <span className="font-bold text-blue-900">Tuition Fees:</span>

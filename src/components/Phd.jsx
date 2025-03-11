@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const fadeInVariants = {
   hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.2, ease: "easeOut" } },
 };
 
 const Phd = () => {
@@ -88,7 +88,7 @@ const Phd = () => {
         className="list-decimal list-inside text-blue-900 text-lg space-y-6 mx-auto mb-6"
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.5 }}
+        viewport={{ once: true, amount: 0.2 }}
       >
         <motion.li variants={fadeInVariants}>
           <span className="font-bold text-blue-900">
@@ -193,7 +193,7 @@ const Phd = () => {
         className="list-decimal list-inside text-blue-900 text-lg space-y-6 mx-auto mb-6"
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.5 }}
+        viewport={{ once: true, amount: 0.2 }}
       >
         <motion.li variants={fadeInVariants}>
           <span className="font-bold text-blue-900">
@@ -368,7 +368,7 @@ const Phd = () => {
         className="list-decimal list-inside text-blue-900 text-lg space-y-4 mx-auto mb-6"
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.5 }}
+        viewport={{ once: true, amount: 0.2 }}
       >
         <motion.li variants={fadeInVariants}>
           <span className="font-bold text-blue-900">Financial Assistance:</span><span className='text-gray-700'> The most obvious benefit of scholarships is the financial relief they provide. Many
@@ -436,7 +436,7 @@ const Phd = () => {
         className="list-decimal list-inside text-blue-900 text-lg space-y-4 mx-auto mb-6"
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.5 }}
+        viewport={{ once: true, amount: 0.2 }}
       >
         <motion.li variants={fadeInVariants}>
           <span className="font-bold text-blue-900">University Selection and Program Guidance:</span><span className='text-gray-700'> We assist students in selecting the right university and PhD program based on their

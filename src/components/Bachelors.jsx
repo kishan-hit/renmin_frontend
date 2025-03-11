@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const fadeInVariants = {
     hidden: { opacity: 0, y: 30 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.2, ease: "easeOut" } },
 };
 
 const Bachelors = () => {
@@ -34,7 +34,7 @@ const Bachelors = () => {
                 className="list-decimal list-inside text-blue-900 text-lg space-y-6 mx-auto mb-6"
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true, amount: 0.5 }}
+                viewport={{ once: true, amount: 0.2 }}
             >
                 <motion.li variants={fadeInVariants}>
                     <span className="font-bold text-blue-900">
@@ -151,7 +151,7 @@ const Bachelors = () => {
                 className="list-decimal list-inside text-blue-900 text-lg space-y-6 mx-auto mb-6"
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true, amount: 0.5 }}
+                viewport={{ once: true, amount: 0.2 }}
             >
                 <motion.li variants={fadeInVariants}>
                     <span className="font-bold text-blue-900">
@@ -325,7 +325,7 @@ const Bachelors = () => {
                 className="list-decimal list-inside text-blue-900 text-lg space-y-4 mx-auto mb-6"
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true, amount: 0.5 }}
+                viewport={{ once: true, amount: 0.2 }}
             >
                 <motion.li variants={fadeInVariants}>
                     <span className="font-bold text-blue-900">No Tuition Fees or Low Tuition Fees:</span><span className='text-gray-700'> The primary benefit of receiving a scholarship is that it significantly reduces or
@@ -386,7 +386,7 @@ const Bachelors = () => {
                 className="list-decimal list-inside text-blue-900 text-lg space-y-4 mx-auto mb-6"
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true, amount: 0.5 }}
+                viewport={{ once: true, amount: 0.2 }}
             >
                 <motion.li variants={fadeInVariants}>
                     <span className="font-bold text-blue-900">University and Course Selection:</span><span className='text-gray-700'> We help students identify the right university and Bachelor’s program that fits their
