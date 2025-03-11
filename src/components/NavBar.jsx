@@ -196,31 +196,46 @@ const NavBar = () => {
             <div className="flex flex-col pl-4 space-y-2 w-full">
               <div
                 className="cursor-pointer hover:bg-blue-200 py-1"
-                onClick={() => navigate("/countries/china")}
+                onClick={() => {
+                  navigate("/countries/china");
+                  setMobileMenuOpen(false);
+                }}
               >
                 China
               </div>
               <div
                 className="cursor-pointer hover:bg-blue-200 py-1"
-                onClick={() => navigate("/countries/russia")}
+                onClick={() => {
+                  navigate("/countries/russia");
+                  setMobileMenuOpen(false);
+                }}
               >
                 Russia
               </div>
               <div
                 className="cursor-pointer hover:bg-blue-200 py-1"
-                onClick={() => navigate("/countries/kyrgyzstan")}
+                onClick={() => {
+                  navigate("/countries/kyrgyzstan");
+                  setMobileMenuOpen(false);
+                }}
               >
                 Kyrgyzstan
               </div>
               <div
                 className="cursor-pointer hover:bg-blue-200 py-1"
-                onClick={() => navigate("/countries/bangladesh")}
+                onClick={() => {
+                  navigate("/countries/bangladesh");
+                  setMobileMenuOpen(false);
+                }}
               >
                 Bangladesh
               </div>
               <div
                 className="cursor-pointer hover:bg-blue-200 py-1"
-                onClick={() => navigate("/countries/uzbekistan")}
+                onClick={() => {
+                  navigate("/countries/uzbekistan");
+                  setMobileMenuOpen(false);
+                }}
               >
                 Uzbekistan
               </div>
