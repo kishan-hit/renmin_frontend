@@ -4,26 +4,68 @@ import profile from "../assets/images/profile.png";
 
 const testimonials = [
   {
-    name: "Ritika Sharma",
-    university: "V.N. Karazin Kharkiv National University",
+    name: "Alfaiz Sheikh",
+    university: "Northwestern Polytechnical University",
     image: profile,
     review:
-      "Renmin Education provided me with the best guidance for my MBBS admission abroad. They helped me choose the right university and made the process stress-free!",
+      "Renmin Education helped me to get a fully funded scholarship in B.Tech (Material Science & Engineering) at Northwestern Polytechnical University, Xi'an, China.",
   },
   {
-    name: "Aryan Singh",
-    university: "Kazan Federal University",
+    name: "Mohd Abdal",
+    university: "Zhengzhou University",
     image: profile,
     review:
-      "I had so many doubts about studying abroad, but Renmin Education guided me at every step. Thanks to them, I am now studying at a top-ranked university in Russia!",
+      "Renmin Education helped me to get admission to Zhengzhou University in International Economics & Trade under a partial scholarship.",
   },
   {
-    name: "Pooja Verma",
+    name: "Pooja Venkatesh",
+    university: "Yangzhou University",
+    image: profile,
+    review:
+      "Hi, my name is Pooja Venkatesh. I am from Tamil Nadu. Renmin Education helped me to get admission in the Chinese language at Yangzhou University.",
+  },
+  {
+    name: "Amaan",
+    university: "Samarkand State Medical University",
+    image: profile,
+    review:
+      "Hi, my name is Amaan. I am from Uttar Pradesh. Renmin Education helped me to get MBBS admission in Samarkand State Medical University, Uzbekistan.",
+  },
+  {
+    name: "Ankita",
+    university: "Pskov State Medical University",
+    image: profile,
+    review:
+      "Hi, my name is Ankita. I am from Haryana. Renmin Education helped me to get MBBS admission in Pskov State Medical University, Russia - 2024.",
+  },
+  {
+    name: "Prachi",
+    university: "Perm State Medical University",
+    image: profile,
+    review:
+      "Hi, my name is Prachi. I am from Delhi. Renmin Education helped me to get MBBS admission in Perm State Medical University, Russia - 2024.",
+  },
+  {
+    name: "Shams",
+    university: "Nantong University",
+    image: profile,
+    review:
+      "Hi, I am Shams from Afghanistan. Renmin Education helped me to get MBA admission under a fully funded scholarship at Nantong University - 2024.",
+  },
+  {
+    name: "Nisha",
+    university: "International Business at Nanjing",
+    image: profile,
+    review:
+      "Hi, my name is Nisha. I am from Punjab. Renmin Education helped me to get admission in International Business at Nanjing under a scholarship.",
+  },
+  {
+    name: "Kaif",
     university: "Orenburg State Medical University",
     image: profile,
     review:
-      "The team at Renmin Education is very supportive and professional. They helped me with admission, visa, and even travel arrangements. Highly recommended!",
-  },
+      "Hi, my name is Kaif. I am from Delhi. Got admission in the MBBS course at Orenburg State Medical University, Russia - 2024. Renmin Education helped us a lot.",
+  }
 ];
 
 const Testimonials = () => {
@@ -69,7 +111,6 @@ const Testimonials = () => {
           <span className="text-4xl text-blue-900 absolute right-0 -bottom-2">❞</span>
         </p>
 
-        {/* Navigation Buttons */}
         <button
           className="absolute left-2 md:left-[-40px] top-1/2 transform -translate-y-1/2 bg-blue-900 text-white p-3 rounded-full shadow-md hover:bg-blue-700 transition-all"
           onClick={prevTestimonial}
