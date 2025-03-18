@@ -1,68 +1,77 @@
 import React, { useState, useEffect } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import profile from "../assets/images/profile.png";
+import Abdal from '../assets/images/testimonials/Abdal.jpeg';
+import Alfaiz from '../assets/images/testimonials/Alfaiz.jpeg';
+import Amaan from '../assets/images/testimonials/Amaan.jpeg';
+import Ankita from '../assets/images/testimonials/Ankita.jpeg';
+import Kaif from '../assets/images/testimonials/Kaif.jpeg';
+import Nisha from '../assets/images/testimonials/Nisha.jpeg';
+import Pooja from '../assets/images/testimonials/Pooja.jpeg';
+import Prachi from '../assets/images/testimonials/Prachi.jpeg';
+import Shams from '../assets/images/testimonials/Shams.jpeg';
 
 const testimonials = [
   {
     name: "Alfaiz Sheikh",
     university: "Northwestern Polytechnical University",
-    image: profile,
+    image: Alfaiz,
     review:
       "Renmin Education helped me to get a fully funded scholarship in B.Tech (Material Science & Engineering) at Northwestern Polytechnical University, Xi'an, China.",
   },
   {
     name: "Mohd Abdal",
     university: "Zhengzhou University",
-    image: profile,
+    image: Abdal,
     review:
       "Renmin Education helped me to get admission to Zhengzhou University in International Economics & Trade under a partial scholarship.",
   },
   {
     name: "Pooja Venkatesh",
     university: "Yangzhou University",
-    image: profile,
+    image: Pooja,
     review:
       "Hi, my name is Pooja Venkatesh. I am from Tamil Nadu. Renmin Education helped me to get admission in the Chinese language at Yangzhou University.",
   },
   {
     name: "Amaan",
     university: "Samarkand State Medical University",
-    image: profile,
+    image: Amaan,
     review:
       "Hi, my name is Amaan. I am from Uttar Pradesh. Renmin Education helped me to get MBBS admission in Samarkand State Medical University, Uzbekistan.",
   },
   {
     name: "Ankita",
     university: "Pskov State Medical University",
-    image: profile,
+    image: Ankita,
     review:
       "Hi, my name is Ankita. I am from Haryana. Renmin Education helped me to get MBBS admission in Pskov State Medical University, Russia - 2024.",
   },
   {
     name: "Prachi",
     university: "Perm State Medical University",
-    image: profile,
+    image: Prachi,
     review:
       "Hi, my name is Prachi. I am from Delhi. Renmin Education helped me to get MBBS admission in Perm State Medical University, Russia - 2024.",
   },
   {
     name: "Shams",
     university: "Nantong University",
-    image: profile,
+    image: Shams,
     review:
       "Hi, I am Shams from Afghanistan. Renmin Education helped me to get MBA admission under a fully funded scholarship at Nantong University - 2024.",
   },
   {
     name: "Nisha",
     university: "International Business at Nanjing",
-    image: profile,
+    image: Nisha,
     review:
       "Hi, my name is Nisha. I am from Punjab. Renmin Education helped me to get admission in International Business at Nanjing under a scholarship.",
   },
   {
     name: "Kaif",
     university: "Orenburg State Medical University",
-    image: profile,
+    image: Kaif,
     review:
       "Hi, my name is Kaif. I am from Delhi. Got admission in the MBBS course at Orenburg State Medical University, Russia - 2024. Renmin Education helped us a lot.",
   }
@@ -99,7 +108,7 @@ const Testimonials = () => {
         <img
           src={image}
           alt={name}
-          className="w-20 h-20 mx-auto rounded-full border-4 border-white shadow-md"
+          className="w-24 h-24 mx-auto rounded-full shadow-md"
         />
 
         <h3 className="text-lg font-bold text-blue-900 mt-4">{name}</h3>
