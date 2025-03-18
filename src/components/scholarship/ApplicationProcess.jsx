@@ -2,7 +2,7 @@ import React from "react";
 import { Typography, Container, useMediaQuery } from "@mui/material";
 import { motion } from "framer-motion";
 import { useTheme } from "@mui/material/styles";
-import { FaArrowRight } from "react-icons/fa";
+// import { FaArrowRight } from "react-icons/fa";
 
 const applicationSteps = [
   {

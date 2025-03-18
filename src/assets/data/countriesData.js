@@ -73,7 +73,7 @@ const countriesData = {
       ],
     },
     mbbs: {
-      title: "Study MBBS in China Under Scholarship",
+      title: "Study MBBS in China",
       description:
         "MBBS is one of the most popular and sought-after programs for international students in China. Medical universities in China offer MBBS programs in English, allowing international students, especially those from India, to study medicine without language barriers. China’s medical universities are recognized by the World Health Organization (WHO) and are included in the list of universities approved by the Medical Council of India (MCI).",
       keyFeatures: {
@@ -335,27 +335,27 @@ const countriesData = {
           website: "https://english.nsu.ru/",
         },
       ],
-      costOfStudy: {
-        title: "Cost of Studying MBBS and PG in Russia",
-        description:
-          "The cost of studying MBBS and PG courses in Russia is affordable compared to Western countries. Below is an approximate breakdown of the costs:",
-        programs: [
-          {
-            title: "MBBS Programs",
-            tuitionFees:
-              "$3,000 to $7,000 per year (depending on the university)",
-            livingExpenses: "$100 to $300 per month",
-            totalCost:
-              "$20,000 to $40,000 (including tuition and living expenses)",
-          },
-          {
-            title: "PG Programs",
-            tuitionFees:
-              "$4,000 to $8,000 per year (depending on the specialization and university)",
-            livingExpenses: "$100 to $300 per month",
-          },
-        ],
-      },
+      // costOfStudy: {
+      //   title: "Cost of Studying MBBS and PG in Russia",
+      //   description:
+      //     "The cost of studying MBBS and PG courses in Russia is affordable compared to Western countries. Below is an approximate breakdown of the costs:",
+      //   programs: [
+      //     {
+      //       title: "MBBS Programs",
+      //       tuitionFees:
+      //         "$3,000 to $7,000 per year (depending on the university)",
+      //       livingExpenses: "$100 to $300 per month",
+      //       totalCost:
+      //         "$20,000 to $40,000 (including tuition and living expenses)",
+      //     },
+      //     {
+      //       title: "PG Programs",
+      //       tuitionFees:
+      //         "$4,000 to $8,000 per year (depending on the specialization and university)",
+      //       livingExpenses: "$100 to $300 per month",
+      //     },
+      //   ],
+      // },
       howToApply: {
         title:
           "How to Apply for MBBS and PG Courses in Russia with Renmin Education Consultancy",

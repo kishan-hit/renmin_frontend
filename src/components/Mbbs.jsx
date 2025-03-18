@@ -546,7 +546,7 @@ const Mbbs = () => {
         ))}
       </motion.div>
 
-      <motion.h4
+      {/* <motion.h4
         className="text-gray-900 text-xl mx-auto md:mt-2 lg:mt-4 mb-8 font-bold"
         initial="hidden"
         whileInView="visible"
@@ -554,7 +554,7 @@ const Mbbs = () => {
         variants={fadeInVariants}
       >
         Top Private Medical Universities in Russia -
-      </motion.h4>
+      </motion.h4> */}
 
       <motion.div
         className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8 px-6 md:px-16 lg:px-32 mb-8"
@@ -693,7 +693,7 @@ const Mbbs = () => {
         ))}
       </motion.div>
 
-      <motion.h4
+      {/* <motion.h4
         className="text-gray-900 text-xl mx-auto md:mt-2 lg:mt-4 mb-8 font-bold"
         initial="hidden"
         whileInView="visible"
@@ -701,7 +701,7 @@ const Mbbs = () => {
         variants={fadeInVariants}
       >
         Top Private Medical Universities in China -
-      </motion.h4>
+      </motion.h4> */}
 
       <motion.div
         className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8 px-6 md:px-16 lg:px-32 mb-8"
@@ -979,7 +979,7 @@ const Mbbs = () => {
         viewport={{ once: true }}
         variants={fadeInVariants}
       >
-        Top Medical Universities in Bangladesh -
+        Top Medical Colleges in Bangladesh -
       </motion.h4>
 
       <motion.div
