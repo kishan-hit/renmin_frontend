@@ -1,16 +1,16 @@
-import React from 'react';
-import NavBar from "../../components/NavBar";
-import Footer from '../../components/Footer';
-import Mbbs from '../../components/Mbbs';
+import React from "react";
+import Footer from "../../components/Footer";
+import Mbbs from "../../components/Mbbs";
+import NavBar from "../../components/navbar/NavBar";
 
 const MbbsPage = () => {
   return (
     <div>
-        <NavBar />
-        <Mbbs />
-        <Footer />
+      <NavBar />
+      <Mbbs />
+      <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default MbbsPage
+export default MbbsPage;

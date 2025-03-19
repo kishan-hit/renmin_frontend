@@ -1,16 +1,16 @@
-import React from 'react';
-import NavBar from "../../components/NavBar";
-import Footer from '../../components/Footer';
-import Masters from '../../components/Masters';
+import React from "react";
+import Footer from "../../components/Footer";
+import Masters from "../../components/Masters";
+import NavBar from "../../components/navbar/NavBar";
 
 const MastersPage = () => {
   return (
     <div>
-        <NavBar />
-        <Masters />
-        <Footer />
+      <NavBar />
+      <Masters />
+      <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default MastersPage
+export default MastersPage;
