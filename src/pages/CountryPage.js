@@ -1,9 +1,9 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import CountryInfo from "../components/countyInfo/CountryInfo";
 import countriesData from "../assets/data/countriesData";
+import NavBar from "../components/navbar/NavBar";
 
 const CountryPage = () => {
   const { countryName } = useParams();

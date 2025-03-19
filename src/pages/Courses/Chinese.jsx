@@ -1,7 +1,7 @@
 import React from "react";
 import ChineseLanguage from "../../components/ChineseLanguage";
-import NavBar from "../../components/NavBar";
-import Footer from '../../components/Footer';
+import Footer from "../../components/Footer";
+import NavBar from "../../components/navbar/NavBar";
 
 const Chinese = () => {
   return (

@@ -1,7 +1,6 @@
 import React from "react";
 import { Typography, Container, useMediaQuery } from "@mui/material";
 import { motion } from "framer-motion";
-import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import { useTheme } from "@mui/material/styles";
 import {
@@ -13,6 +12,7 @@ import {
 import ApplicationProcess from "../components/scholarship/ApplicationProcess";
 import Conclusion from "../components/Conclusion";
 import ScholarshipTypes from "../components/scholarship/ScholarshipTypes";
+import NavBar from "../components/navbar/NavBar";
 
 const whyStudy = [
   {

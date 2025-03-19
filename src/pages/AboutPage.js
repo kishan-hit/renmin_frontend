@@ -1,9 +1,9 @@
-import React from 'react'
-import NavBar from '../components/NavBar';
-import Footer from '../components/Footer';
-import AboutContent from '../components/AboutContent';
-import Stats from '../components/Stats';
-import MissionVision from '../components/MissionVision';
+import React from "react";
+import Footer from "../components/Footer";
+import AboutContent from "../components/AboutContent";
+import Stats from "../components/Stats";
+import MissionVision from "../components/MissionVision";
+import NavBar from "../components/navbar/NavBar";
 
 const AboutPage = () => {
   return (
@@ -14,7 +14,7 @@ const AboutPage = () => {
       <MissionVision />
       <Footer />
     </div>
-  )
-}
+  );
+};
 
 export default AboutPage;
