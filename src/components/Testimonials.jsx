@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import profile from "../assets/images/profile.png";
+// import profile from "../assets/images/profile.png";
 import Abdal from '../assets/images/testimonials/Abdal.jpeg';
 import Alfaiz from '../assets/images/testimonials/Alfaiz.jpeg';
 import Amaan from '../assets/images/testimonials/Amaan.jpeg';
