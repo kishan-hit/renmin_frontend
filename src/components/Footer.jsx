@@ -3,6 +3,10 @@ import { FaPhoneAlt, FaMapMarkerAlt, FaEnvelope, FaWhatsapp, FaFacebook, FaInsta
 import logo from '../assets/images/logo3.png';
 
 const Footer = () => {
+    const handleOpenLink = () => {
+        window.open("https://maps.app.goo.gl/p7SRxfELNUchFwe18", "_blank", "noopener,noreferrer");
+    };
+
     return (
         <footer className="relative z-10 bg-[#161616] text-white py-8 px-6">
             <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-start">
@@ -34,7 +38,7 @@ const Footer = () => {
 
                     <div className="flex items-center space-x-4 bg-white p-4 rounded-lg">
                         <FaMapMarkerAlt className="text-[#bf1d1d] text-2xl" />
-                        <div>
+                        <div className='cursor-pointer' onClick={handleOpenLink}>
                             <h4 className="text-[#bf1d1d] font-semibold">Location</h4>
                             <p className="text-gray-600 text-sm">
                                 3 rd Floor Logix Park Near Sector 16 Metro station Noida Uttar
