@@ -6,7 +6,6 @@ import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
-import { Button } from "@mui/material"; // We'll use Button to toggle top row
 import { FaChevronDown } from "react-icons/fa";
 
 import SecondaryNavBar from "./SecondaryNavBar";
@@ -60,9 +59,9 @@ const DesktopNav = ({
   };
 
   // Toggle the secondary navbar
-  const handleToggleSecondary = () => {
-    setShowSecondary((prev) => !prev);
-  };
+  // const handleToggleSecondary = () => {
+  //   setShowSecondary((prev) => !prev);
+  // };
 
   return (
     <AppBar position="fixed" sx={{ backgroundColor: "#bf1d1d", boxShadow: 3 }}>

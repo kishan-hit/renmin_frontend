@@ -7,7 +7,7 @@ import AboutUs from "./AboutUs";
 import OurSuccessfulVisas from "./OurSuccessfulVisas";
 import Stats from "./Stats";
 import Modal from "./Modal";
-import SecondaryNav from "./SecondaryNav";
+// import SecondaryNav from "./SecondaryNav";
 
 const Home = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);

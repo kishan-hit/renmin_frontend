@@ -1,8 +1,8 @@
 import {
   Login,
-  Phone,
+  // Phone,
   PhoneForwarded,
-  PhonelinkLockOutlined,
+  // PhonelinkLockOutlined,
 } from "@mui/icons-material";
 import {
   AppBar,

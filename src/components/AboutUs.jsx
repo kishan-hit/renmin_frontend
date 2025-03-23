@@ -307,34 +307,32 @@ const AboutUs = () => {
       .catch((err) => alert("Failed to send email: " + err.text))
       .finally(() => setSending(false));
   };
-
-  const sendEmail = () => {
-    setSending(true);
-    emailjs
-      .send(
-        "service_eu3aq98",
-        "template_6s28dam",
-        {
-          name: formData.name,
-          email: formData.email,
-          country: formData.country,
-          state: formData.state,
-          city: formData.city,
-          phone: `${formData.phoneCode}${formData.phone}`,
-        },
-        "HtVy_Lq5EuCMY4Awd"
-      )
-      .then(() => {
-        console.log("Data received");
-        alert("Your data has been successfully received!");
-        setFormData({ name: "", email: "", country: "", state: "", city: "", phone: "" });
-      })
-      .catch((err) => {
-        console.log("Data send failed", err);
-        alert("Failed to send email: " + err.text)
-      })
-      .finally(() => setSending(false));
-  };
+  //   setSending(true);
+  //   emailjs
+  //     .send(
+  //       "service_eu3aq98",
+  //       "template_6s28dam",
+  //       {
+  //         name: formData.name,
+  //         email: formData.email,
+  //         country: formData.country,
+  //         state: formData.state,
+  //         city: formData.city,
+  //         phone: `${formData.phoneCode}${formData.phone}`,
+  //       },
+  //       "HtVy_Lq5EuCMY4Awd"
+  //     )
+  //     .then(() => {
+  //       console.log("Data received");
+  //       alert("Your data has been successfully received!");
+  //       setFormData({ name: "", email: "", country: "", state: "", city: "", phone: "" });
+  //     })
+  //     .catch((err) => {
+  //       console.log("Data send failed", err);
+  //       alert("Failed to send email: " + err.text)
+  //     })
+  //     .finally(() => setSending(false));
+  // };
 
   return (
     <div
