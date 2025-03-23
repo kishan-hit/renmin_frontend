@@ -58,7 +58,7 @@ const services = [
 
 const Services = () => {
     return (
-        <section className="py-16 bg-gray-100">
+        <section className="relative z-10 py-16 bg-gray-100">
             <Fade direction='up' delay={1} triggerOnce>
                 <h2 className="text-center text-[#bf1d1d] text-4xl font-bold">Services We Offer</h2>
                 <p className="text-center mt-1 text-2xl text-gray-700 mb-6 px-2">
