@@ -47,7 +47,12 @@ const SecondaryNavBar = ({ showSecondary }) => {
           >
             <EmailOutlined sx={{ fontSize: 16, color: "#bf1d1d" }} />
             <Typography variant="body2" sx={{ fontWeight: 600 }}>
-              renmineducation@gmail.com
+              <a
+                href="mailto:renmineducation@gmail.com"
+                style={{ textDecoration: "none", color: "inherit" }}
+              >
+                renmineducation@gmail.com
+              </a>
             </Typography>
           </Box>
           {/* Vertical divider only visible on larger screens */}
@@ -69,7 +74,12 @@ const SecondaryNavBar = ({ showSecondary }) => {
           >
             <Call sx={{ fontSize: 16, color: "#bf1d1d" }} />
             <Typography variant="body2" sx={{ fontWeight: 600 }}>
-              +91-7033919405
+              <a
+                href="tel:+917033919405"
+                style={{ textDecoration: "none", color: "inherit" }}
+              >
+                +91-7033919405
+              </a>
             </Typography>
           </Box>
         </Box>
@@ -96,13 +106,34 @@ const SecondaryNavBar = ({ showSecondary }) => {
             justifyContent: "flex-end",
           }}
         >
-          <IconButton sx={{ color: "green", p: 0.5 }} aria-label="WhatsApp">
+          <IconButton
+            sx={{ color: "green", p: 0.5 }}
+            aria-label="WhatsApp"
+            component="a"
+            href="https://wa.me/917033919405"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaWhatsapp />
           </IconButton>
-          <IconButton sx={{ color: "#bf1d1d", p: 0.5 }} aria-label="Instagram">
+          <IconButton
+            sx={{ color: "#bf1d1d", p: 0.5 }}
+            aria-label="Instagram"
+            component="a"
+            href="https://www.instagram.com/renmin_education?igsh=MW84dWc5bTBsM29heA=="
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaInstagram />
           </IconButton>
-          <IconButton sx={{ p: 0.5 }} aria-label="Facebook">
+          <IconButton
+            sx={{ p: 0.5 }}
+            aria-label="Facebook"
+            component="a"
+            href="https://www.facebook.com/share/1B6FwyTQNY/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaFacebook style={{ color: "blue" }} />
           </IconButton>
         </Box>
