@@ -339,6 +339,7 @@ const AboutUs = () => {
       className="flex flex-col lg:flex-row bg-cover bg-center items-center bg-gray-100 px-4 md:px-10 lg:px-32 gap-8 py-16 mt-16 md:mt-20"
       style={{ backgroundImage: `url(${bgimg})` }}
     >
+    <div className="absolute inset-0 bg-black opacity-60"></div>
       <Slide
         direction="left"
         duration={1000}

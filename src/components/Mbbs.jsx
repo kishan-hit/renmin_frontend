@@ -282,6 +282,15 @@ const UzbekistanColleges = [
   }
 ];
 
+const data = [
+  { country: "India", budget: "45 - 60 lakhs" },
+  { country: "Russia", budget: "15 - 40 lakhs" },
+  { country: "China", budget: "18 - 35 lakhs" },
+  { country: "Kyrgyzstan", budget: "20 - 40 lakhs" },
+  { country: "Uzbekistan", budget: "20 - 30 lakhs" },
+  { country: "Bangladesh", budget: "30 - 50 lakhs" },
+];
+
 const Mbbs = () => {
   return (
     <section className="bg-gray-100 py-12 px-6 md:px-16 lg:px-32 mt-16 md:mt-20">
@@ -328,6 +337,30 @@ const Mbbs = () => {
         guidance throughout the application process, helping students select the best
         universities, secure scholarships, and navigate visa processes.
       </motion.div>
+
+      <div className="flex justify-center mt-10 mb-10 px-4">
+        <motion.table
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          className="border-collapse border border-gray-400 w-full max-w-md sm:max-w-lg md:max-w-xl min-w-[300px] text-center shadow-lg"
+        >
+          <thead>
+            <tr className="bg-gray-200">
+              <th className="border border-gray-400 px-4 py-2">Country</th>
+              <th className="border border-gray-400 px-4 py-2">Overall Budget</th>
+            </tr>
+          </thead>
+          <tbody>
+            {data.map((item, index) => (
+              <tr key={index} className="bg-white hover:bg-gray-100">
+                <td className="border border-gray-400 px-4 py-2">{item.country}</td>
+                <td className="border border-gray-400 px-4 py-2">{item.budget}</td>
+              </tr>
+            ))}
+          </tbody>
+        </motion.table>
+      </div>
 
       <motion.h4
         className="text-blue-900 text-xl mx-auto mb-2 font-bold"
