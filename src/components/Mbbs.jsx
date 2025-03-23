@@ -28,6 +28,9 @@ import XiamenUniversity from '../assets/images/universities/XiamenUniversity.jpe
 import ZhejiangUniversity from '../assets/images/universities/ZhejiangUniversity.jpeg';
 import FU from '../assets/images/universities/Fudan_University.jpeg';
 import SJTU from '../assets/images/universities/SJTU.jpeg';
+import ChinaMbbs from '../assets/images/feeDetails/MBBS_IN_CHINA.jpg';
+import BangladeshMbbs from '../assets/images/feeDetails/MBBS_IN_BNGLADESH.jpg';
+import RussiaMbbs from '../assets/images/feeDetails/MBBS_IN_RUSSIA.jpg';
 
 const fadeInVariants = {
   hidden: { opacity: 0, y: 30 },
@@ -595,6 +598,18 @@ const Mbbs = () => {
         ))}
       </motion.div>
 
+      <motion.div
+        className="bg-white rounded-xl shadow-lg border border-gray-200 overflow-hidden mt-8 mb-8"
+        variants={cardVariants}
+      >
+        <motion.img
+          src={RussiaMbbs}
+          alt='ChinaMbbs'
+          className="w-full object-cover"
+          variants={fadeInVariants}
+        />
+      </motion.div>
+
       <motion.h4
         className="text-gray-900 text-xl mx-auto md:mt-2 lg:mt-4 mb-8 font-bold"
         initial="hidden"
@@ -740,6 +755,18 @@ const Mbbs = () => {
             </div>
           </motion.div>
         ))}
+      </motion.div>
+
+      <motion.div
+        className="bg-white rounded-xl shadow-lg border border-gray-200 overflow-hidden mt-8 mb-8"
+        variants={cardVariants}
+      >
+        <motion.img
+          src={ChinaMbbs}
+          alt='ChinaMbbs'
+          className="w-full object-cover"
+          variants={fadeInVariants}
+        />
       </motion.div>
 
       <motion.h4
@@ -1019,6 +1046,18 @@ const Mbbs = () => {
             </div>
           </motion.div>
         ))}
+      </motion.div>
+
+      <motion.div
+        className="bg-white rounded-xl shadow-lg border border-gray-200 overflow-hidden mt-8 mb-8"
+        variants={cardVariants}
+      >
+        <motion.img
+          src={BangladeshMbbs}
+          alt='ChinaMbbs'
+          className="w-full object-cover"
+          variants={fadeInVariants}
+        />
       </motion.div>
 
       <motion.h4

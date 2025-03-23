@@ -1,5 +1,5 @@
 import React from "react";
-import { FaPhoneAlt, FaMapMarkerAlt, FaEnvelope, FaFacebook, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FaPhoneAlt, FaMapMarkerAlt, FaEnvelope, FaWhatsapp, FaFacebook, FaInstagram } from "react-icons/fa";
 import logo from '../assets/images/logo3.png';
 
 const Footer = () => {
@@ -17,9 +17,9 @@ const Footer = () => {
                         most prestigious universities.
                     </p>
                     <div className="flex space-x-3">
-                        <FaFacebook className="text-gray-300 hover:text-white text-xl cursor-pointer" />
-                        <FaLinkedin className="text-gray-300 hover:text-white text-xl cursor-pointer" />
+                        <FaWhatsapp className="text-gray-300 hover:text-white text-xl cursor-pointer" />
                         <FaInstagram className="text-gray-300 hover:text-white text-xl cursor-pointer" />
+                        <FaFacebook className="text-gray-300 hover:text-white text-xl cursor-pointer" />
                     </div>
                 </div>
 

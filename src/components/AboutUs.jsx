@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Fade, Slide } from "react-awesome-reveal";
 import { useNavigate } from "react-router-dom";
+import bgimg from '../assets/images/bgimg.jpeg';
+import emailjs from "emailjs-com";
 
 const AboutUs = () => {
   const countryData = {
@@ -231,25 +233,21 @@ const AboutUs = () => {
   const [selectedState, setSelectedState] = useState("");
   const [states, setStates] = useState(countryData.India.states);
   const [cities, setCities] = useState([]);
+  const [sending, setSending] = useState(false);
   const navigate = useNavigate();
 
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    country: "",
-    phoneCode: "+91",
+    country: countryKeys[0],
+    phoneCode: countryPhoneCodes[countryKeys[0]],
     phoneNumber: "",
-    field1: "",
-    field2: "",
+    state: "",
+    city: "",
   });
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Form Submitted", formData);
   };
 
   const handleCountryChange = (e) => {
@@ -259,23 +257,97 @@ const AboutUs = () => {
     setStates(countryData[country].states);
     setSelectedState("");
     setCities([]);
+    setFormData({ ...formData, country, phoneCode: countryPhoneCodes[country], state: "", city: "" });
   };
 
   const handleStateChange = (e) => {
     const state = e.target.value;
     setSelectedState(state);
     setCities(state ? countryData[selectedCountry]?.cities[state] || [] : []);
+    setFormData({ ...formData, state, city: "" });
+  };
+
+  const handleCityChange = (e) => {
+    setFormData({ ...formData, city: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setSending(true);
+
+    emailjs
+      .send(
+        "service_eu3aq98",
+        "template_6s28dam",
+        {
+          name: formData.name,
+          email: formData.email,
+          country: formData.country,
+          state: formData.state,
+          city: formData.city,
+          phone: `${formData.phoneCode}${formData.phoneNumber}`,
+        },
+        "HtVy_Lq5EuCMY4Awd"
+      )
+      .then(() => {
+        alert("Your data has been successfully received!");
+        setFormData({
+          name: "",
+          email: "",
+          country: countryKeys[0],
+          phoneCode: countryPhoneCodes[countryKeys[0]],
+          phoneNumber: "",
+          state: "",
+          city: "",
+        });
+        setSelectedCountry(countryKeys[0]);
+        setSelectedState("");
+        setCities([]);
+      })
+      .catch((err) => alert("Failed to send email: " + err.text))
+      .finally(() => setSending(false));
+  };
+
+  const sendEmail = () => {
+    setSending(true);
+    emailjs
+      .send(
+        "service_eu3aq98",
+        "template_6s28dam",
+        {
+          name: formData.name,
+          email: formData.email,
+          country: formData.country,
+          state: formData.state,
+          city: formData.city,
+          phone: `${formData.phoneCode}${formData.phone}`,
+        },
+        "HtVy_Lq5EuCMY4Awd"
+      )
+      .then(() => {
+        console.log("Data received");
+        alert("Your data has been successfully received!");
+        setFormData({ name: "", email: "", country: "", state: "", city: "", phone: "" });
+      })
+      .catch((err) => {
+        console.log("Data send failed", err);
+        alert("Failed to send email: " + err.text)
+      })
+      .finally(() => setSending(false));
   };
 
   return (
-    <div className="flex flex-col lg:flex-row items-center bg-gray-100 px-4 md:px-10 lg:px-32 gap-8 py-16 mt-16 md:mt-20">
+    <div
+      className="flex flex-col lg:flex-row bg-cover bg-center items-center bg-gray-100 px-4 md:px-10 lg:px-32 gap-8 py-16 mt-16 md:mt-20"
+      style={{ backgroundImage: `url(${bgimg})` }}
+    >
       <Slide
         direction="left"
         duration={1000}
         triggerOnce
         className="w-full lg:w-[60%]"
       >
-        <div className="px-2 md:px-4 lg:px-12">
+        <div className="px-2 md:px-4 lg:px-8 bg-white pt-5 pb-5 rounded-md">
           <h2 className="text-4xl font-bold text-blue-900">
             About Renmin Education
           </h2>
@@ -303,17 +375,17 @@ const AboutUs = () => {
 
       <div className="w-full lg:w-[40%]">
         <Fade direction="up" delay={1} triggerOnce>
-          <div className="bg-[#002B49] text-white p-6 rounded-lg shadow-lg w-full mx-auto">
-            <p className="text-lg text-center mt-2">
-              We’d love to learn more about you!
-            </p>
-            <form className="mt-4 space-y-3">
+        <div className="bg-[#002B49] text-white p-6 rounded-lg shadow-lg w-full mx-auto">
+            <p className="text-lg text-center mt-2">We’d love to learn more about you!</p>
+            <form className="mt-4 space-y-3" onSubmit={handleSubmit}>
               <input
                 type="text"
                 name="name"
                 placeholder="Your Name"
                 className="w-full p-2 rounded bg-white text-black"
                 required
+                value={formData.name}
+                onChange={handleChange}
               />
               <input
                 type="email"
@@ -321,8 +393,9 @@ const AboutUs = () => {
                 placeholder="Your Email"
                 className="w-full p-2 rounded bg-white text-black"
                 required
+                value={formData.email}
+                onChange={handleChange}
               />
-
               <select
                 name="country"
                 className="w-full p-2 rounded bg-white text-black"
@@ -337,22 +410,17 @@ const AboutUs = () => {
                 ))}
               </select>
               <div className="flex space-x-2">
-                <input
-                  type="text"
-                  className="p-2 rounded bg-white text-black w-1/4 text-center"
-                  value={phoneCode}
-                  readOnly
-                />
-
+                <input type="text" className="p-2 rounded bg-white text-black w-1/4 text-center" value={phoneCode} readOnly />
                 <input
                   type="tel"
                   name="phoneNumber"
                   placeholder="Your Phone Number"
                   className="p-2 rounded bg-white text-black w-3/4"
                   required
+                  value={formData.phoneNumber}
+                  onChange={handleChange}
                 />
               </div>
-
               <select
                 name="state"
                 className="w-full p-2 rounded bg-white text-black"
@@ -368,11 +436,12 @@ const AboutUs = () => {
                   </option>
                 ))}
               </select>
-
               <select
                 name="city"
                 className="w-full p-2 rounded bg-white text-black"
                 required
+                value={formData.city}
+                onChange={handleCityChange}
                 disabled={!selectedState}
               >
                 <option value="">Select your city</option>
@@ -382,12 +451,8 @@ const AboutUs = () => {
                   </option>
                 ))}
               </select>
-
-              <button
-                type="submit"
-                className="bg-[#004B87] text-white w-full p-2 rounded"
-              >
-                SUBMIT NOW
+              <button type="submit" className="bg-[#004B87] text-white w-full p-2 rounded" disabled={sending}>
+                {sending ? "SENDING..." : "SUBMIT NOW"}
               </button>
             </form>
           </div>

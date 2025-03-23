@@ -47,7 +47,7 @@ const SecondaryNavBar = ({ showSecondary }) => {
           >
             <EmailOutlined sx={{ fontSize: 16, color: "#bf1d1d" }} />
             <Typography variant="body2" sx={{ fontWeight: 600 }}>
-              info@renmineducation.com
+              renmineducation@gmail.com
             </Typography>
           </Box>
           {/* Vertical divider only visible on larger screens */}
@@ -69,7 +69,7 @@ const SecondaryNavBar = ({ showSecondary }) => {
           >
             <Call sx={{ fontSize: 16, color: "#bf1d1d" }} />
             <Typography variant="body2" sx={{ fontWeight: 600 }}>
-              +91-XXXXXXXXXX
+              +91-7033919405
             </Typography>
           </Box>
         </Box>

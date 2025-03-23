@@ -113,11 +113,11 @@ const countriesData = {
           website: "https://english.njmu.edu.cn/",
         },
       ],
-      scholarships: [
-        "Chinese Government Scholarships (CGS)",
-        "Belt and Road Scholarship",
-        "University-Specific Scholarships",
-      ],
+      // scholarships: [
+      //   "Chinese Government Scholarships (CGS)",
+      //   "Belt and Road Scholarship",
+      //   "University-Specific Scholarships",
+      // ],
     },
     bachelorPrograms: {
       title: "Study Bachelor’s Degree in China Under Scholarship",
