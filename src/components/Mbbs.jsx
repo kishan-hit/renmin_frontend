@@ -95,7 +95,7 @@ const IndPrvtColleges = [
     id: 1,
     name: "Sri Ramachandra Institute of Higher Education and Research, Chennai",
     about: "One of India’s most prestigious medical colleges",
-    fees: "INR 1,000 - 5,000 per year",
+    fees: "Approx INR 15 lakhs per year",
     image: RamchnadraCollege,
   },
   {
